@@ -15,6 +15,3 @@ Główne założenia projektu:
 6. Dbanie o bezpieczeństwo: System zapewnia zwiększone bezpieczeństwo domu poprzez automatyczną aktywację blokad antywłamaniowych w odpowiedzi na zidentyfikowane zagrożenia.
 
 Projekt „Smart Windows Manager” reprezentuje przyszłość zarządzania oknami w inteligentnych domach, łącząc w sobie zaawansowane technologie z funkcjonalnościami zapewniającymi większy komfort i bezpieczeństwo mieszkańców. Poprzez inteligentne wykorzystanie danych z czujników i automatyzację, system oferuje wyjątkowe rozwiązania dostosowane do potrzeb nowoczesnego mieszkania.
-
-
-TEST
