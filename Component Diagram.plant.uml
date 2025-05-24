@@ -1,0 +1,55 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Component Diagram for "Serwis API / System Główny" of Smart Windows Manager
+
+' Definiujemy odniesienia do elementów zewnętrznych (innych kontenerów lub systemów) dla kontekstu
+System_Ext(web_app_ref, "Aplikacja Webowa", "Klient API, zapewnia UI dla użytkownika")
+System_Ext(db_ref, "Baza Danych", "Przechowuje konfiguracje, scenariusze, stany")
+System_Ext(physical_windows_ext, "System Okienny", "Fizyczne okna i ich mechanizmy wykonawcze")
+System_Ext(sensor_system_ext, "System Czujników", "Dostarcza dane o świetle i bezpieczeństwie")
+
+
+Container_Boundary(api_c, "Serwis API / System Główny") {
+    Component(api_controller, "Kontroler API", "np. Spring Boot Controllers, FastAPI Endpoints", "Odbiera żądania HTTP z Aplikacji Webowej, waliduje je, autoryzuje i przekazuje do odpowiednich serwisów wewnętrznych. Formatuje odpowiedzi.")
+    Component(window_service, "Serwis Zarządzania Oknami", "Logika biznesowa", "Odpowiada za logikę sterowania oknami (otwieranie, zamykanie, ściemnianie, blokady). Komunikuje się z adapterem sprzętowym okien.")
+    Component(data_analysis_service, "Serwis Analizy Danych / Silnik Reguł", "Logika biznesowa", "Przetwarza dane z czujników, stosuje reguły automatyzacji (np. optymalne warunki świetlne) i bezpieczeństwa.")
+    Component(scenario_service, "Serwis Scenariuszy", "Logika biznesowa", "Zarządza tworzeniem, modyfikacją, przechowywaniem i wykonywaniem scenariuszy zdefiniowanych przez użytkownika (np. 'tryb poranny', 'tryb wyjścia z domu').")
+    Component(security_module, "Moduł Bezpieczeństwa", "Logika biznesowa", "Obsługuje logikę antywłamaniową, reaguje na zidentyfikowane zagrożenia, zarządza aktywacją blokad.")
+
+    Component(window_hw_adapter, "Adapter Sprzętowy Okien", "Interfejs komunikacyjny", "Abstrahuje i obsługuje komunikację ze sprzętem okiennym (Systemem Okiennym). Tłumaczy generyczne polecenia na specyficzne dla sprzętu.")
+    Component(sensor_adapter, "Adapter Czujników", "Interfejs komunikacyjny", "Abstrahuje i obsługuje komunikację z Systemem Czujników. Normalizuje przychodzące dane.")
+
+    ' Relacje wewnętrzne między komponentami
+    Rel(api_controller, window_service, "Deleguje żądania sterowania oknami", "wywołuje metody")
+    Rel(api_controller, scenario_service, "Deleguje zarządzanie scenariuszami", "wywołuje metody")
+    Rel(api_controller, data_analysis_service, "Przekazuje konfiguracje, może żądać analizy", "wywołuje metody")
+    Rel(api_controller, security_module, "Przekazuje żądania dot. bezpieczeństwa", "wywołuje metody")
+
+    Rel(window_service, window_hw_adapter, "Wysyła polecenia do sprzętu okiennego", "korzysta z")
+    Rel(window_service, data_analysis_service, "Pobiera decyzje automatyzacji lub informuje o zmianach stanu", "interakcja")
+    Rel(window_service, security_module, "Wykonuje polecenia blokady/odblokowania", "sterowany przez")
+
+    Rel(data_analysis_service, sensor_adapter, "Odbiera przetworzone dane z czujników", "korzysta z")
+    Rel(data_analysis_service, window_service, "Wyzwała automatyczne akcje na oknach", "steruje")
+    Rel(data_analysis_service, scenario_service, "Pobiera aktywne scenariusze do wykonania i ich logikę", "korzysta z")
+    Rel(data_analysis_service, security_module, "Informuje o potencjalnych zagrożeniach / zdarzeniach", "interakcja")
+
+    Rel(scenario_service, window_service, "Wyzwała akcje na oknach w ramach wykonywania scenariusza", "steruje")
+    Rel(security_module, window_service, "Wydaje polecenia blokady/odblokowania okien w odpowiedzi na zagrożenia", "steruje")
+
+    ' Relacje do elementów zewnętrznych (względem tego kontenera)
+    Rel_U(api_controller, web_app_ref, "Obsługuje żądania od", "API (HTTPS/REST)")
+    Rel_D(scenario_service, db_ref, "Zapisuje/Odczytuje definicje i stany scenariuszy", "JDBC/ORM")
+    Rel_D(data_analysis_service, db_ref, "Zapisuje/Odczytuje reguły, logi (opcjonalnie)", "JDBC/ORM")
+    Rel_D(security_module, db_ref, "Zapisuje logi bezpieczeństwa, konfiguracje (opcjonalnie)", "JDBC/ORM")
+    Rel_D(window_service, db_ref, "Zapisuje/Odczytuje aktualny stan okien (opcjonalnie)", "JDBC/ORM")
+}
+
+' Relacje do systemów zewnętrznych (sprzęt)
+Rel_R(window_hw_adapter, physical_windows_ext, "Steruje", "np. Zigbee, Z-Wave, API producenta")
+Rel_R(sensor_adapter, sensor_system_ext, "Odczytuje dane", "np. MQTT, HTTP, API producenta")
+
+@enduml
