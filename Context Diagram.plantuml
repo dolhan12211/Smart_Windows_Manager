@@ -1,0 +1,17 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+title System Context for Smart Windows Manager
+
+Person(user, "Mieszkaniec", "Użytkownik systemu, np. mieszkaniec domu. Konfiguruje system i korzysta z jego funkcji.")
+System(smart_windows_system, "Smart Windows Manager", "Automatyzuje i optymalizuje zarządzanie oknami, ściemnianiem oraz blokadami antywłamaniowymi.")
+
+System_Ext(physical_windows, "System Okienny", "Fizyczne okna z mechanizmami otwierania/zamykania, ściemniania i blokadami antywłamaniowymi.")
+System_Ext(sensor_system, "System Czujników", "Dostarcza dane oświetleniowe (czujniki światła) i bezpieczeństwa (np. czujniki ruchu, otwarcia).")
+
+Rel_D(user, smart_windows_system, "Zarządza oknami, konfiguruje preferencje, tworzy scenariusze, aktywuje/deaktywuje funkcje")
+Rel_D(smart_windows_system, physical_windows, "Steruje (otwiera, zamyka, ściemnia, blokuje/odblokowuje)")
+Rel_U(smart_windows_system, sensor_system, "Odczytuje dane (poziom światła, stan bezpieczeństwa)")
+@enduml

@@ -1,0 +1,26 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Container Diagram for Smart Windows Manager
+
+Person(user, "Mieszkaniec", "Użytkownik systemu.")
+
+System_Ext(physical_windows, "System Okienny", "Fizyczne okna z mechanizmami.")
+System_Ext(sensor_system, "System Czujników", "Dostarcza dane oświetleniowe i bezpieczeństwa.")
+
+System_Boundary(c1, "Smart Windows Manager") {
+    Container(web_app, "Aplikacja Webowa", "Technologia: HTML, CSS, JavaScript, Framework UI", "Udostępnia interfejs użytkownika do zdalnego sterowania, konfiguracji preferencji i scenariuszy.")
+    Container(api_service, "Serwis API / System Główny", "Technologia: np. Python/Java/Node.js, Framework API", "Obsługuje logikę biznesową: automatyzację, przetwarzanie danych z czujników, zarządzanie scenariuszami, aktywację blokad, komunikację z oknami.")
+    ContainerDb(database, "Baza Danych", "Technologia: np. PostgreSQL, MySQL, MongoDB", "Przechowuje ustawienia użytkownika, zdefiniowane scenariusze, historię zdarzeń (opcjonalnie), konfigurację systemu.")
+}
+
+Rel_D(user, web_app, "Używa (przegląda, konfiguruje, steruje)", "HTTPS")
+Rel_D(web_app, api_service, "Wysyła żądania użytkownika i odbiera dane do wyświetlenia", "API (HTTPS/REST)")
+
+Rel_D(api_service, database, "Odczytuje i zapisuje dane", "np. JDBC, ODBC, API")
+Rel_D(api_service, physical_windows, "Wysyła polecenia sterujące", "np. Zigbee, Z-Wave, Wi-Fi API, MQTT")
+Rel_D(api_service, sensor_system, "Odczytuje dane telemetryczne", "np. MQTT, HTTP, dedykowany protokół")
+
+@enduml

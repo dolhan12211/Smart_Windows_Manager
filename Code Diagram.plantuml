@@ -1,0 +1,120 @@
+@startuml
+' Można użyć !include C4_Code.puml, ale dla diagramów klas często wystarczy standardowa składnia UML PlantUML.
+' !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Code.puml
+
+title Code Diagram for "Smart Windows Manager"
+
+package "com.smartwindows.windowservice" {
+
+    interface IWindowHardwareAdapter {
+        + sendOpenCommand(deviceId: String, percentage: int): boolean
+        + sendCloseCommand(deviceId: String): boolean
+        + sendDimCommand(deviceId: String, level: int): boolean
+        + sendLockCommand(deviceId: String, lock: boolean): boolean
+        + getDeviceStatus(deviceId: String): WindowDeviceStatusVo
+    }
+    note right of IWindowHardwareAdapter
+        Interfejs implementowany przez
+        komponent "Adapter Sprzętowy Okien".
+    end note
+
+    class WindowDeviceStatusVo {
+        + deviceId: String
+        + isOpen: boolean
+        + openPercentage: int
+        + dimLevel: int
+        + isLocked: boolean
+    }
+
+    enum WindowState {
+        OPEN
+        CLOSED
+        PARTIALLY_OPEN
+        DIMMED
+        LOCKED
+        UNLOCKED
+    }
+
+    class Window {
+        - id: String
+        - deviceId: String ' Identyfikator w systemie sprzętowym
+        - name: String
+        - currentOpenPercentage: int
+        - currentDimLevel: int
+        - isLocked: boolean
+        + updateStatus(status: WindowDeviceStatusVo): void
+        + getCurrentStatus(): WindowDeviceStatusVo
+        + applyCommand(command: WindowControlCommand): void
+    }
+
+    class WindowControlCommand {
+        + targetWindowId: String
+        + commandType: WindowCommandType
+        + value: Object ' np. procent otwarcia, poziom ściemnienia
+    }
+
+    enum WindowCommandType {
+        OPEN_WINDOW
+        CLOSE_WINDOW
+        SET_DIM_LEVEL
+        SET_LOCK_STATUS
+    }
+
+    interface IScenarioExecutionInterface {
+        + executeWindowAction(windowId: String, action: Object): void
+    }
+    note right of IScenarioExecutionInterface
+        Interfejs używany przez
+        "Serwis Scenariuszy" do wywoływania akcji.
+    end note
+    
+    interface IDataAnalysisFeedback {
+        + applyAutomatedSetting(windowId: String, setting: Object): void
+    }
+    note right of IDataAnalysisFeedback
+        Interfejs używany przez
+        "Serwis Analizy Danych" do automatycznych zmian.
+    end note
+
+    class WindowManagementService implements IScenarioExecutionInterface, IDataAnalysisFeedback {
+        - windowHardwareAdapter: IWindowHardwareAdapter
+        - windowRepository: IWindowRepository
+        + processUserCommand(command: WindowControlCommand): boolean
+        + getWindowDetails(windowId: String): Window
+        + updateWindowStateFromHardware(deviceId: String): void
+        -- IScenarioExecutionInterface --
+        + executeWindowAction(windowId: String, action: Object): void
+        -- IDataAnalysisFeedback --
+        + applyAutomatedSetting(windowId: String, setting: Object): void
+    }
+    note left of WindowManagementService::processUserCommand
+        1. Walidacja polecenia.
+        2. Pobranie obiektu 'Window' z repozytorium.
+        3. Konwersja na polecenie dla adaptera sprzętowego.
+        4. Wywołanie metody na 'windowHardwareAdapter'.
+        5. Aktualizacja stanu 'Window' i zapis w repozytorium.
+    end note
+
+
+    interface IWindowRepository {
+        + findById(id: String): Window
+        + save(window: Window): void
+        + findAll(): List<Window>
+    }
+    note right of IWindowRepository
+      Abstrakcja dostępu do danych
+      okien, np. z Bazy Danych.
+    end note
+
+    WindowManagementService o--> "1" IWindowHardwareAdapter : uses
+    WindowManagementService o--> "1" IWindowRepository : uses
+    WindowManagementService ..|> IScenarioExecutionInterface
+    WindowManagementService ..|> IDataAnalysisFeedback
+    WindowManagementService "1" *-- "*" Window : manages
+
+    Window -- WindowState : (conceptual, state represented by fields)
+    WindowControlCommand -- WindowCommandType
+    IWindowHardwareAdapter .. WindowDeviceStatusVo : returns/uses
+}
+
+@enduml
