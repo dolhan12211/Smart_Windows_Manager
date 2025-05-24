@@ -1,2 +1,3 @@
 Adam przerzuciliśmy diagramy an Plantuml, raz ze łatwiej to edytować, a dwa ze szybciej poszło zrobinie XD pobierz sobie w rozszerzeniach i ALT+D i bedziesz miał z kodu cały wykres 
 @Ignis224 - no gitara jest w ogóle mi działa ten podgląd XD 
+mamy pliki do projektu w repo, teraz aby odpalic projekt trzeba odpalic maszyne na azurze polaczyc sie z druga przez ssh ( mi na windows nie dzialalo) potem na maszynie trzeba sklonowac repo z plikami na amszyne i zainstalowac dockera (instrukcja na kanale minecraft) potem odpalamy build-compose (dockerfile rowniez jest w repo) i powinno dzialac i to taki wstep do projektu potem dodamy wiecej danych symulowanych
