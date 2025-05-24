@@ -1,2 +1,2 @@
 Adam przerzuciliśmy diagramy an Plantuml, raz ze łatwiej to edytować, a dwa ze szybciej poszło zrobinie XD pobierz sobie w rozszerzeniach i ALT+D i bedziesz miał z kodu cały wykres 
-Wrzuciliśmy strukturę projektu do repo zgodnie z sugestia z chata dotyczaca kodu, probowalismy odpalic to ale nie przechodzil moj klucz publiczny ktory generowalem na kompie z windowsem, byc moze wart osprobowac na innej maszynie wirtualnej.
+@Ignis224 - no gitara jest w ogóle mi działa ten podgląd XD 
