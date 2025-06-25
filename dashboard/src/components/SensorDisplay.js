@@ -38,16 +38,16 @@ function SensorDisplay({ sensor }) {
 
   const motionHighlightClass = (sensor_type === 'motion' && value) ? 'bg-red-900 border-red-500' : '';
 
-  return (
-    <div className={`bg-gray-800 border border-gray-700 p-2 rounded-md text-xs ${motionHighlightClass}`}>
-      <p className="text-blue-400 font-bold">{sensor_type.replace('_', ' ').toUpperCase()}</p>
-      <p>ID: <span className="text-blue-300">{sensor_id}</span></p>
-      <p>Value: <span className={`font-semibold ${statusColorClass()}`}>{formatValue()}</span></p>
-      <p className="text-gray-500 text-xs">
-        {new Date(timestamp).toLocaleTimeString()}
-      </p>
-    </div>
-  );
-}
+    return (
+      <div className={`bg-gray-800 border border-gray-700 p-2 rounded-md text-xs ${motionHighlightClass}`}>
+        <p className="text-blue-400 font-bold">{sensor_type.replace('_', ' ').toUpperCase()}</p>
+        <p>ID: <span className="text-blue-300">{sensor_id}</span></p>
+        <p>Value: <span className={`font-semibold ${statusColorClass()}`}>{formatValue()}</span></p>
+        <p className="text-gray-500 text-xs">
+          {new Date(timestamp).toLocaleString('pl-PL', { timeZone: 'Europe/Warsaw', hour: '2-digit', minute: '2-digit', second: '2-digit' })}
+        </p>
+      </div>
+    );
+  }
 
 export default SensorDisplay;
