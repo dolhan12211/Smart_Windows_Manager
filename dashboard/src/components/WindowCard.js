@@ -14,8 +14,8 @@ function WindowCard({ windowData }) {
 
   const sendCommand = async (endpoint, body = {}) => {
     try {
-      // Use the service name 'backend' for inter-container communication
-      const response = await fetch(`http://backend:8000/${endpoint}/${window_id}`, {
+      // Use the public IP address for browser access to the backend
+      const response = await fetch(`http://4.233.221.95:8000/${endpoint}/${window_id}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

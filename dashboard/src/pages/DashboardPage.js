@@ -7,8 +7,8 @@ function DashboardPage() {
   useEffect(() => {
         const fetchData = async () => {
           try {
-            // Use the service name 'backend' for inter-container communication
-            const response = await fetch('http://backend:8000/get_data');
+            // Use the public IP address for browser access to the backend
+            const response = await fetch('http://4.233.221.95:8000/get_data');
             if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
             }
