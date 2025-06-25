@@ -25,6 +25,7 @@ origins = [
     "http://localhost",
     "http://localhost:3000", # Allow frontend development server
     "http://127.0.0.1:3000", # Allow frontend development server when accessed via 127.0.0.1
+    "http://4.233.221.95:3000", # Allow frontend when accessed via Azure VM public IP
 ]
 CORS(app, resources={r"/*": {"origins": origins}})
 
