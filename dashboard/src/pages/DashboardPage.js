@@ -5,12 +5,13 @@ function DashboardPage() {
   const [windowsData, setWindowsData] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('http://127.0.0.1:8000/get_data');
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
+        const fetchData = async () => {
+          try {
+            // Use the service name 'backend' for inter-container communication
+            const response = await fetch('http://backend:8000/get_data');
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
         const result = await response.json();
         console.log("Fetched data:", result);
         setWindowsData(result);
