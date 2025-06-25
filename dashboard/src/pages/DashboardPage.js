@@ -7,7 +7,7 @@ function DashboardPage() {
   useEffect(() => {
         const fetchData = async () => {
           try {
-            // Use the public IP address for browser access to the backend
+            
             const response = await fetch('http://4.233.221.95:8000/get_data');
             if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
@@ -21,9 +21,9 @@ function DashboardPage() {
     };
 
     fetchData();
-    const intervalId = setInterval(fetchData, 1000); // Fetch data every 1 second
+    const intervalId = setInterval(fetchData, 1000); 
     return () => clearInterval(intervalId);
-  }, []); // Empty dependency array means this effect runs once on mount
+  }, []); 
 
   return (
     <div className="min-h-screen bg-gray-800 text-gray-100 p-6">
@@ -39,7 +39,7 @@ function DashboardPage() {
               <WindowCard key={window.window_id} windowData={window} window_open={window.window_open} />
             ))
           ) : (
-            <p className="text-center text-gray-400 col-span-full">Waiting for window data...</p>
+            <p className="text-center text-gray-400 col-span-full">Waiting for windows data...</p>
           )}
         </div>
       </div>
