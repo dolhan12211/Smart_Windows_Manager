@@ -52,6 +52,7 @@ file_handler.setLevel(logging.INFO)
 # Create formatter and add it to the handlers
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 file_handler.setFormatter(formatter)
+formatter.converter = time.gmtime # Use UTC time for logging
 
 # Add the file handler to the logger
 action_logger.addHandler(file_handler)
