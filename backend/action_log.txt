@@ -1,0 +1,985 @@
+2025-06-25 19:48:10,849 - action_logger - INFO - Window window_001: ALARM ACTIVATED! Reason: Motion detected!
+2025-06-25 19:48:12,383 - action_logger - INFO - Window window_002: ALARM ACTIVATED! Reason: Motion detected!
+2025-06-25 19:48:12,851 - action_logger - INFO - Window window_002: ALARM ACTIVATED! Reason: Motion detected!
+2025-06-25 19:48:14,853 - action_logger - INFO - Window window_003: ALARM ACTIVATED! Reason: Motion detected!
+2025-06-25 19:48:16,386 - action_logger - INFO - Window window_003: ALARM ACTIVATED! Reason: Motion detected!
+2025-06-25 19:48:20,389 - action_logger - INFO - Window window_001: ALARM ACTIVATED! Reason: Motion detected!
+2025-06-25 19:48:57,369 - action_logger - INFO - Window window_002: ALARM ACTIVATED! Reason: Motion detected!
+2025-06-25 19:48:57,861 - action_logger - INFO - Window window_002: ALARM ACTIVATED! Reason: Motion detected!
+2025-06-25 19:49:07,868 - action_logger - INFO - Window window_003: ALARM ACTIVATED! Reason: Motion detected!
+2025-06-25 19:49:13,380 - action_logger - INFO - Window window_003: ALARM ACTIVATED! Reason: Motion detected!
+2025-06-25 19:49:21,877 - action_logger - INFO - Window window_001: ALARM ACTIVATED! Reason: Motion detected!
+2025-06-25 19:49:25,389 - action_logger - INFO - Window window_001: ALARM ACTIVATED! Reason: Motion detected!
+2025-06-25 19:49:39,570 - action_logger - INFO - Window window_001: Manual control changed from False to True
+2025-06-25 19:49:39,570 - action_logger - INFO - API: Set manual control for window_001 to True
+2025-06-25 19:49:41,232 - action_logger - INFO - Window window_002: Manual control changed from False to True
+2025-06-25 19:49:41,232 - action_logger - INFO - API: Set manual control for window_002 to True
+2025-06-25 19:49:42,579 - action_logger - INFO - Window window_003: Manual control changed from False to True
+2025-06-25 19:49:42,579 - action_logger - INFO - API: Set manual control for window_003 to True
+2025-06-25 19:49:46,009 - action_logger - INFO - Window window_001: Window state changed to CLOSED.
+2025-06-25 19:49:46,009 - action_logger - INFO - API: Manually closed window window_001
+2025-06-25 19:49:46,978 - action_logger - INFO - Window window_002: Window state changed to CLOSED.
+2025-06-25 19:49:46,978 - action_logger - INFO - API: Manually closed window window_002
+2025-06-25 19:49:47,669 - action_logger - INFO - Window window_003: Window state changed to CLOSED.
+2025-06-25 19:49:47,669 - action_logger - INFO - API: Manually closed window window_003
+2025-06-25 19:50:01,353 - action_logger - INFO - Window window_001: Manual control changed from True to False
+2025-06-25 19:50:01,353 - action_logger - INFO - API: Set manual control for window_001 to False
+2025-06-25 19:50:01,813 - action_logger - INFO - Window window_002: Manual control changed from True to False
+2025-06-25 19:50:01,813 - action_logger - INFO - API: Set manual control for window_002 to False
+2025-06-25 19:50:02,725 - action_logger - INFO - Window window_003: Manual control changed from True to False
+2025-06-25 19:50:02,725 - action_logger - INFO - API: Set manual control for window_003 to False
+2025-06-25 19:52:04,007 - action_logger - INFO - Window window_001: Window state changed to CLOSED.
+2025-06-25 19:52:50,040 - action_logger - INFO - Window window_002: Window state changed to CLOSED.
+2025-06-25 19:52:56,044 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.07%)
+2025-06-25 19:52:58,046 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.18%)
+2025-06-25 19:53:00,048 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.45%)
+2025-06-25 19:53:02,050 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.69%)
+2025-06-25 19:53:04,051 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.68%)
+2025-06-25 19:53:06,053 - action_logger - INFO - Window window_001: Closing window due to high humidity (70.09%)
+2025-06-25 19:53:06,053 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.48%)
+2025-06-25 19:53:08,055 - action_logger - INFO - Window window_001: Closing window due to high humidity (70.07%)
+2025-06-25 19:53:08,055 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.26%)
+2025-06-25 19:53:10,057 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.04%)
+2025-06-25 19:53:10,057 - action_logger - INFO - Window window_001: Closing window due to high humidity (70.04%)
+2025-06-25 19:53:16,062 - action_logger - INFO - Window window_001: Closing window due to high humidity (70.02%)
+2025-06-25 19:53:56,089 - action_logger - INFO - Window window_001: Closing window due to high humidity (70.19%)
+2025-06-25 19:53:58,091 - action_logger - INFO - Window window_001: Closing window due to high humidity (70.41%)
+2025-06-25 19:54:00,092 - action_logger - INFO - Window window_001: Closing window due to high humidity (70.67%)
+2025-06-25 19:54:02,095 - action_logger - INFO - Window window_001: Closing window due to high humidity (70.89%)
+2025-06-25 19:54:04,096 - action_logger - INFO - Window window_001: Closing window due to high humidity (71.04%)
+2025-06-25 19:54:06,098 - action_logger - INFO - Window window_001: Closing window due to high humidity (71.22%)
+2025-06-25 19:54:08,100 - action_logger - INFO - Window window_001: Closing window due to high humidity (71.5%)
+2025-06-25 19:54:10,101 - action_logger - INFO - Window window_001: Closing window due to high humidity (71.7%)
+2025-06-25 19:54:12,103 - action_logger - INFO - Window window_001: Closing window due to high humidity (71.98%)
+2025-06-25 19:54:14,104 - action_logger - INFO - Window window_001: Closing window due to high humidity (72.12%)
+2025-06-25 19:54:16,105 - action_logger - INFO - Window window_001: Closing window due to high humidity (72.26%)
+2025-06-25 19:54:18,106 - action_logger - INFO - Window window_001: Closing window due to high humidity (72.48%)
+2025-06-25 19:54:20,108 - action_logger - INFO - Window window_001: Closing window due to high humidity (72.68%)
+2025-06-25 19:54:22,109 - action_logger - INFO - Window window_001: Closing window due to high humidity (72.83%)
+2025-06-25 19:54:24,110 - action_logger - INFO - Window window_001: Closing window due to high humidity (73.01%)
+2025-06-25 19:54:26,112 - action_logger - INFO - Window window_001: Closing window due to high humidity (73.29%)
+2025-06-25 19:54:28,113 - action_logger - INFO - Window window_001: Closing window due to high humidity (73.5%)
+2025-06-25 19:54:30,114 - action_logger - INFO - Window window_001: Closing window due to high humidity (73.71%)
+2025-06-25 19:54:32,115 - action_logger - INFO - Window window_001: Closing window due to high humidity (73.83%)
+2025-06-25 19:54:34,117 - action_logger - INFO - Window window_001: Closing window due to high humidity (74.11%)
+2025-06-25 19:54:36,118 - action_logger - INFO - Window window_001: Closing window due to high humidity (74.39%)
+2025-06-25 19:54:38,120 - action_logger - INFO - Window window_001: Closing window due to high humidity (74.55%)
+2025-06-25 19:54:40,121 - action_logger - INFO - Window window_001: Closing window due to high humidity (74.68%)
+2025-06-25 19:54:42,123 - action_logger - INFO - Window window_001: Closing window due to high humidity (74.89%)
+2025-06-25 19:54:44,124 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.07%)
+2025-06-25 19:54:44,125 - action_logger - INFO - Window window_001: Closing window due to high humidity (74.94%)
+2025-06-25 19:54:46,125 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.28%)
+2025-06-25 19:54:46,126 - action_logger - INFO - Window window_001: Closing window due to high humidity (74.8%)
+2025-06-25 19:54:47,778 - action_logger - INFO - Window window_001: Manual control changed from False to True
+2025-06-25 19:54:47,779 - action_logger - INFO - API: Set manual control for window_001 to True
+2025-06-25 19:54:48,127 - action_logger - INFO - Window window_001: Closing window due to high humidity (74.61%)
+2025-06-25 19:54:48,127 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.54%)
+2025-06-25 19:54:50,128 - action_logger - INFO - Window window_001: Closing window due to high humidity (74.44%)
+2025-06-25 19:54:50,129 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.75%)
+2025-06-25 19:54:50,133 - action_logger - INFO - Window window_001: ALARM DEACTIVATED.
+2025-06-25 19:54:50,133 - action_logger - INFO - API: Manually deactivated alarm for window_001
+2025-06-25 19:54:50,870 - action_logger - INFO - Window window_001: Manual control changed from True to False
+2025-06-25 19:54:50,870 - action_logger - INFO - API: Set manual control for window_001 to False
+2025-06-25 19:54:52,130 - action_logger - INFO - Window window_001: Closing window due to high humidity (74.21%)
+2025-06-25 19:54:52,130 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.99%)
+2025-06-25 19:54:54,131 - action_logger - INFO - Window window_001: Closing window due to high humidity (73.93%)
+2025-06-25 19:54:54,131 - action_logger - INFO - Window window_002: Closing window due to high humidity (71.21%)
+2025-06-25 19:54:55,132 - action_logger - INFO - Window window_001: ALARM ACTIVATED! Reason: Motion detected!
+2025-06-25 19:54:56,133 - action_logger - INFO - Window window_001: Closing window due to high humidity (73.74%)
+2025-06-25 19:54:56,133 - action_logger - INFO - Window window_002: Closing window due to high humidity (71.4%)
+2025-06-25 19:54:58,134 - action_logger - INFO - Window window_001: Closing window due to high humidity (73.48%)
+2025-06-25 19:54:58,134 - action_logger - INFO - Window window_002: Closing window due to high humidity (71.6%)
+2025-06-25 19:55:00,136 - action_logger - INFO - Window window_002: Closing window due to high humidity (71.76%)
+2025-06-25 19:55:02,137 - action_logger - INFO - Window window_002: Closing window due to high humidity (71.99%)
+2025-06-25 19:55:04,139 - action_logger - INFO - Window window_001: Closing window due to high humidity (73.0%)
+2025-06-25 19:55:04,139 - action_logger - INFO - Window window_002: Closing window due to high humidity (72.22%)
+2025-06-25 19:55:06,141 - action_logger - INFO - Window window_002: Closing window due to high humidity (72.5%)
+
+2025-06-25 19:56:57,348 - action_logger - INFO - Window window_003: Manual control changed from False to True
+2025-06-25 19:56:57,348 - action_logger - INFO - API: Set manual control for window_003 to True
+2025-06-25 19:56:58,594 - action_logger - INFO - Window window_003: ALARM ACTIVATED! Reason: Manual activation via API
+2025-06-25 19:56:58,594 - action_logger - INFO - API: Manually activated alarm for window_003
+2025-06-25 19:57:02,719 - action_logger - INFO - Window window_003: Manual control changed from True to False
+2025-06-25 19:57:02,719 - action_logger - INFO - API: Set manual control for window_003 to False
+2025-06-25 19:57:07,221 - action_logger - INFO - Window window_002: Manual control changed from False to True
+2025-06-25 19:57:07,221 - action_logger - INFO - API: Set manual control for window_002 to True
+2025-06-25 19:57:08,557 - action_logger - INFO - Window window_002: ALARM ACTIVATED! Reason: Manual activation via API
+2025-06-25 19:57:08,557 - action_logger - INFO - API: Manually activated alarm for window_002
+2025-06-25 19:57:09,157 - action_logger - INFO - Window window_002: Manual control changed from True to False
+2025-06-25 19:57:09,157 - action_logger - INFO - API: Set manual control for window_002 to False
+2025-06-25 19:57:13,302 - action_logger - INFO - Window window_001: Manual control changed from False to True
+2025-06-25 19:57:13,302 - action_logger - INFO - API: Set manual control for window_001 to True
+2025-06-25 19:57:14,440 - action_logger - INFO - Window window_001: ALARM ACTIVATED! Reason: Manual activation via API
+2025-06-25 19:57:14,440 - action_logger - INFO - API: Manually activated alarm for window_001
+2025-06-25 19:57:16,870 - action_logger - INFO - Window window_001: Manual control changed from True to False
+2025-06-25 19:57:16,870 - action_logger - INFO - API: Set manual control for window_001 to False
+2025-06-25 20:00:57,483 - action_logger - INFO - Window window_001: Window state changed to CLOSED.
+2025-06-25 20:00:57,483 - action_logger - INFO - Window window_001: ALARM ACTIVATED! Reason: High temperature (30.02°C)
+2025-06-25 20:02:01,481 - action_logger - INFO - Window window_001: Manual control changed from False to True
+2025-06-25 20:02:01,482 - action_logger - INFO - API: Set manual control for window_001 to True
+2025-06-25 20:02:03,365 - action_logger - INFO - Window window_001: ALARM ACTIVATED! Reason: Manual activation via API
+2025-06-25 20:02:03,365 - action_logger - INFO - API: Manually activated alarm for window_001
+2025-06-25 20:02:04,411 - action_logger - INFO - Window window_001: Manual control changed from True to False
+2025-06-25 20:02:04,411 - action_logger - INFO - API: Set manual control for window_001 to False
+2025-06-25 20:02:04,763 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:06,765 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:08,767 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:10,768 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:12,770 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:14,771 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:16,773 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:18,775 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:20,776 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:22,777 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:24,778 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:38,788 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:40,786 - action_logger - INFO - Window window_003: Window state changed to CLOSED.
+2025-06-25 20:02:40,786 - action_logger - INFO - Window window_003: ALARM ACTIVATED! Reason: High temperature (30.08°C)
+2025-06-25 20:02:40,789 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:48,792 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:50,200 - action_logger - INFO - Window window_003: Manual control changed from False to True
+2025-06-25 20:02:50,200 - action_logger - INFO - API: Set manual control for window_003 to True
+2025-06-25 20:02:52,977 - action_logger - INFO - Window window_003: Manual control changed from True to False
+2025-06-25 20:02:52,977 - action_logger - INFO - API: Set manual control for window_003 to False
+2025-06-25 20:02:53,294 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:53,294 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.26%)
+2025-06-25 20:02:55,295 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:55,295 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.33%)
+2025-06-25 20:02:57,297 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:57,297 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.26%)
+2025-06-25 20:02:59,298 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:02:59,298 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.28%)
+2025-06-25 20:03:01,299 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:01,299 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.24%)
+2025-06-25 20:03:03,300 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:03,300 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.21%)
+2025-06-25 20:03:05,301 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:05,302 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.27%)
+2025-06-25 20:03:07,303 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:07,303 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.29%)
+2025-06-25 20:03:08,806 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:09,305 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:09,305 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.28%)
+2025-06-25 20:03:10,807 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:11,306 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:11,306 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.27%)
+2025-06-25 20:03:12,809 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:13,308 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.41%)
+2025-06-25 20:03:14,810 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:15,309 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.45%)
+2025-06-25 20:03:17,311 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.49%)
+2025-06-25 20:03:19,312 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.54%)
+2025-06-25 20:03:21,314 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.64%)
+2025-06-25 20:03:23,315 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.52%)
+2025-06-25 20:03:24,819 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:25,316 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:25,317 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.41%)
+2025-06-25 20:03:27,317 - action_logger - INFO - Window window_001: Window state changed to CLOSED.
+2025-06-25 20:03:27,317 - action_logger - INFO - Window window_001: ALARM ACTIVATED! Reason: High temperature (30.07°C)
+2025-06-25 20:03:27,317 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:27,318 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:27,318 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.37%)
+2025-06-25 20:03:29,318 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:29,319 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.48%)
+2025-06-25 20:03:31,320 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:31,321 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.48%)
+2025-06-25 20:03:33,322 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+43%)
+2025-06-25 20:03:35,324 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.42%)
+2025-06-25 20:03:37,326 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:37,326 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.47%)
+2025-06-25 20:03:38,827 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:39,327 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:39,327 - action_logger - INFO - Window window_001: Closing window due to high humidity (70.24%)
+2025-06-25 20:03:39,327 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.46%)
+2025-06-25 20:03:40,829 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:41,328 - action_logger - INFO - Window window_001: Closing window due to high humidity (70.43%)
+2025-06-25 20:03:41,328 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.41%)
+2025-06-25 20:03:42,831 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:43,329 - action_logger - INFO - Window window_001: Closing window due to high humidity (70.62%)
+2025-06-25 20:03:43,330 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.44%)
+2025-06-25 20:03:45,331 - action_logger - INFO - Window window_001: Closing window due to high humidity (70.79%)
+2025-06-25 20:03:45,331 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.64%)
+2025-06-25 20:03:47,332 - action_logger - INFO - Window window_001: Closing window due to high humidity (71.08%)
+2025-06-25 20:03:47,332 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.8%)
+2025-06-25 20:03:48,835 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:49,333 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:49,333 - action_logger - INFO - Window window_001: Closing window due to high humidity (71.4%)
+2025-06-25 20:03:49,333 - action_logger - INFO - Window window_003: Closing window due to high humidity (71.03%)
+2025-06-25 20:03:50,837 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:51,334 - action_logger - INFO - Window window_001: Closing window due to high humidity (71.6%)
+2025-06-25 20:03:51,335 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:51,335 - action_logger - INFO - Window window_003: Closing window due to high humidity (71.25%)
+2025-06-25 20:03:52,838 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:53,336 - action_logger - INFO - Window window_001: Closing window due to high humidity (71.86%)
+2025-06-25 20:03:53,336 - action_logger - INFO - Window window_003: Closing window due to high humidity (71.48%)
+2025-06-25 20:03:54,840 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:55,338 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:55,338 - action_logger - INFO - Window window_003: Closing window due to high humidity (71.68%)
+2025-06-25 20:03:55,338 - action_logger - INFO - Window window_001: Closing window due to high humidity (72.06%)
+2025-06-25 20:03:56,537 - action_logger - INFO - Window window_003: Manual control changed from False to True
+2025-06-25 20:03:56,537 - action_logger - INFO - API: Set manual control for window_003 to True
+2025-06-25 20:03:56,841 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:03:57,339 - action_logger - INFO - Window window_001: Closing window due to high humidity (72.3%)
+2025-06-25 20:03:58,738 - action_logger - INFO - Window window_003: Window state changed to OPEN.
+2025-06-25 20:03:58,738 - action_logger - INFO - API: Manually opened window window_003
+2025-06-25 20:03:59,341 - action_logger - INFO - Window window_001: Closing window due to high humidity (72.43%)
+2025-06-25 20:04:01,343 - action_logger - INFO - Window window_001: Closing window due to high humidity (72.65%)
+2025-06-25 20:04:03,345 - action_logger - INFO - Window window_001: Closing window due to high humidity (72.94%)
+2025-06-25 20:04:05,347 - action_logger - INFO - Window window_001: Closing window due to high humidity (73.13%)
+2025-06-25 20:04:07,349 - action_logger - INFO - Window window_001: Closing window due to high humidity (73.37%)
+2025-06-25 20:04:09,351 - action_logger - INFO - Window window_001: Closing window due to high humidity (73.61%)
+2025-06-25 20:04:10,851 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:11,352 - action_logger - INFO - Window window_001: Closing window due to high humidity (73.86%)
+2025-06-25 20:04:13,353 - action_logger - INFO - Window window_001: Closing window due to high humidity (74.07%)
+2025-06-25 20:04:15,355 - action_logger - INFO - Window window_001: Closing window due to high humidity (74.38%)
+2025-06-25 20:04:17,356 - action_logger - INFO - Window window_001: Closing window due to high humidity (74.61%)
+2025-06-25 20:04:19,357 - action_logger - INFO - Window window_001: Closing window due to high humidity (74.79%)
+2025-06-25 20:04:21,359 - action_logger - INFO - Window window_001: Closing window due to high humidity (74.98%)
+2025-06-25 20:04:22,924 - action_logger - INFO - Window window_003: Manual control changed from True to False
+2025-06-25 20:04:22,924 - action_logger - INFO - API: Set manual control for window_003 to False
+2025-06-25 20:04:23,360 - action_logger - INFO - Window window_003: Window state changed to CLOSED.
+2025-06-25 20:04:23,360 - action_logger - INFO - Window window_003: Closing window due to high humidity (74.59%)
+2025-06-25 20:04:23,360 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:23,360 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.27%)
+2025-06-25 20:04:25,362 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.5%)
+
+2025-06-25 20:04:27,363 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.68%)
+2025-06-25 20:04:27,363 - action_logger - INFO - Window window_003: Closing window due to high humidity (74.96%)
+2025-06-25 20:04:29,365 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.17%)
+2025-06-25 20:04:29,366 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:29,366 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.89%)
+2025-06-25 20:04:31,367 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.32%)
+2025-06-25 20:04:31,368 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:31,368 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.14%)
+2025-06-25 20:04:33,369 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:33,369 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.55%)
+2025-06-25 20:04:33,370 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:33,370 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.32%)
+2025-06-25 20:04:34,871 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:35,371 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:35,371 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.48%)
+2025-06-25 20:04:35,371 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:35,371 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.33%)
+2025-06-25 20:04:36,872 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:37,372 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:37,372 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.21%)
+2025-06-25 20:04:37,372 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:37,372 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.31%)
+2025-06-25 20:04:38,873 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:39,373 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:39,373 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.07%)
+2025-06-25 20:04:39,374 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:39,374 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.42%)
+2025-06-25 20:04:40,875 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:41,375 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:41,375 - action_logger - INFO - Window window_003: Closing window due to high humidity (74.85%)
+2025-06-25 20:04:41,375 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:41,376 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.37%)
+2025-06-25 20:04:42,877 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:43,377 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:43,377 - action_logger - INFO - Window window_003: Closing window due to high humidity (74.67%)
+2025-06-25 20:04:43,377 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:43,377 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.33%)
+2025-06-25 20:04:44,878 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:45,378 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:45,378 - action_logger - INFO - Window window_003: Closing window due to high humidity (74.48%)
+2025-06-25 20:04:45,378 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:45,379 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.37%)
+2025-06-25 20:04:46,879 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:47,380 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:47,380 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:47,380 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.47%)
+2025-06-25 20:04:47,380 - action_logger - INFO - Window window_003: Closing window due to high humidity (74.29%)
+2025-06-25 20:04:49,381 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:49,381 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.44%)
+2025-06-25 20:04:49,382 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:49,382 - action_logger - INFO - Window window_003: Closing window due to high humidity (74.1%)
+2025-06-25 20:04:51,382 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.42%)
+2025-06-25 20:04:51,383 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:51,383 - action_logger - INFO - Window window_003: Closing window due to high humidity (73.9%)
+2025-06-25 20:04:53,384 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.44%)
+2025-06-25 20:04:53,384 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:53,385 - action_logger - INFO - Window window_003: Closing window due to high humidity (73.69%)
+2025-06-25 20:04:55,385 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.45%)
+2025-06-25 20:04:55,386 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:55,386 - action_logger - INFO - Window window_003: Closing window due to high humidity (73.56%)
+2025-06-25 20:04:56,887 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:57,387 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.31%)
+2025-06-25 20:04:57,387 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:57,388 - action_logger - INFO - Window window_003: Closing window due to high humidity (73.38%)
+2025-06-25 20:04:58,889 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:59,389 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:59,389 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.29%)
+2025-06-25 20:04:59,389 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:04:59,389 - action_logger - INFO - Window window_003: Closing window due to high humidity (73.24%)
+2025-06-25 20:05:00,890 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:01,390 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.32%)
+2025-06-25 20:05:01,391 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:01,391 - action_logger - INFO - Window window_003: Closing window due to high humidity (73.05%)
+2025-06-25 20:05:03,391 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.26%)
+2025-06-25 20:05:03,392 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:03,392 - action_logger - INFO - Window window_003: Closing window due to high humidity (72.77%)
+2025-06-25 20:05:05,392 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:05,392 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.16%)
+2025-06-25 20:05:05,394 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:05,394 - action_logger - INFO - Window window_003: Closing window due to high humidity (72.6%)
+2025-06-25 20:05:07,393 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:07,393 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.16%)
+2025-06-25 20:05:07,395 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:07,395 - action_logger - INFO - Window window_003: Closing window due to high humidity (72.49%)
+2025-06-25 20:05:09,395 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:09,395 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.14%)
+2025-06-25 20:05:09,398 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:09,398 - action_logger - INFO - Window window_003: Closing window due to high humidity (72.3%)
+2025-06-25 20:05:11,396 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:11,396 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.11%)
+2025-06-25 20:05:11,399 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:11,399 - action_logger - INFO - Window window_003: Closing window due to high humidity (72.08%)
+2025-06-25 20:05:13,399 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:13,399 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.08%)
+2025-06-25 20:05:13,400 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:13,400 - action_logger - INFO - Window window_003: Closing window due to high humidity (71.76%)
+2025-06-25 20:05:15,400 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:15,400 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.12%)
+2025-06-25 20:05:15,402 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:15,402 - action_logger - INFO - Window window_003: Closing window due to high humidity (71.54%)
+2025-06-25 20:05:17,402 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:17,402 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.11%)
+2025-06-25 20:05:17,403 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:17,403 - action_logger - INFO - Window window_003: Closing window due to high humidity (71.26%)
+2025-06-25 20:05:19,403 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:19,403 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.12%)
+2025-06-25 20:05:19,404 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:19,404 - action_logger - INFO - Window window_003: Closing window due to high humidity (71.11%)
+2025-06-25 20:05:21,404 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:21,405 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.11%)
+2025-06-25 20:05:21,405 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:21,405 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.89%)
+2025-06-25 20:05:23,406 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:23,406 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.11%)
+2025-06-25 20:05:23,407 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:23,407 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.69%)
+2025-06-25 20:05:25,407 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:25,408 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.06%)
+2025-06-25 20:05:25,408 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:25,409 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.6%)
+2025-06-25 20:05:27,409 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:27,409 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.01%)
+2025-06-25 20:05:27,410 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:27,410 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.66%)
+2025-06-25 20:05:28,910 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:29,410 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:29,410 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.07%)
+2025-06-25 20:05:29,411 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.74%)
+2025-06-25 20:05:30,912 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:31,412 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.06%)
+2025-06-25 20:05:31,413 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:31,413 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.67%)
+2025-06-25 20:05:32,913 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:33,414 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:33,414 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.08%)
+2025-06-25 20:05:33,415 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:33,415 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.71%)
+2025-06-25 20:05:34,915 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:35,415 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:35,415 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.96%)
+2025-06-25 20:05:35,416 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:35,416 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.79%)
+2025-06-25 20:05:36,916 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:37,417 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:37,418 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.86%)
+2025-06-25 20:05:37,418 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.86%)
+2025-06-25 20:05:38,918 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:39,419 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+86%)
+2025-06-25 20:05:39,419 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.85%)
+2025-06-25 20:05:40,919 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:41,420 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.73%)
+2025-06-25 20:05:42,920 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:43,422 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.7%)
+2025-06-25 20:05:43,422 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.74%)
+2025-06-25 20:05:45,424 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:45,424 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.79%)
+2025-06-25 20:05:47,425 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:47,425 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.77%)
+2025-06-25 20:05:49,212 - action_logger - INFO - Window window_002: Manual control changed from False to True
+2025-06-25 20:05:49,212 - action_logger - INFO - API: Set manual control for window_002 to True
+2025-06-25 20:05:49,427 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:49,427 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.75%)
+2025-06-25 20:05:49,945 - action_logger - INFO - Window window_002: Window state changed to CLOSED.
+2025-06-25 20:05:49,945 - action_logger - INFO - API: Manually closed window window_002
+2025-06-25 20:05:51,428 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:51,428 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.61%)
+2025-06-25 20:05:51,577 - action_logger - INFO - Window window_002: Manual control changed from True to False
+2025-06-25 20:05:51,577 - action_logger - INFO - API: Set manual control for window_002 to False
+2025-06-25 20:05:53,429 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.86%)
+2025-06-25 20:05:55,431 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.51%)
+2025-06-25 20:05:57,432 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+72%)
+2025-06-25 20:05:57,432 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.51%)
+2025-06-25 20:05:58,932 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:05:59,434 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.58%)
+2025-06-25 20:06:00,934 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:01,436 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.67%)
+2025-06-25 20:06:03,438 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.68%)
+2025-06-25 20:06:05,440 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.63%)
+2025-06-25 20:06:07,441 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.63%)
+2025-06-25 20:06:08,939 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:09,443 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.6%)
+
+2025-06-25 20:06:10,940 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:11,445 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.49%)
+2025-06-25 20:06:11,445 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.5%)
+2025-06-25 20:06:12,943 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:13,446 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.51%)
+2025-06-25 20:06:13,446 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.54%)
+2025-06-25 20:06:14,945 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:15,447 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.67%)
+2025-06-25 20:06:15,448 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.65%)
+2025-06-25 20:06:17,448 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.82%)
+2025-06-25 20:06:17,449 - action_logger - INFO - Window window_003: Closing window due to high humidity (70.83%)
+2025-06-25 20:06:19,449 - action_logger - INFO - Window window_001: Closing window due to high humidity (75.98%)
+2025-06-25 20:06:19,450 - action_logger - INFO - Window window_003: Closing window due to high humidity (71.02%)
+2025-06-25 20:06:21,450 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.29%)
+2025-06-25 20:06:21,451 - action_logger - INFO - Window window_003: Closing window due to high humidity (71.26%)
+2025-06-25 20:06:23,451 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.42%)
+2025-06-25 20:06:23,453 - action_logger - INFO - Window window_003: Closing window due to high humidity (71.45%)
+2025-06-25 20:06:24,950 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:25,452 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.66%)
+2025-06-25 20:06:25,454 - action_logger - INFO - Window window_003: Closing window due to high humidity (71.63%)
+2025-06-25 20:06:27,454 - action_logger - INFO - Window window_001: Closing window due to high humidity (76.87%)
+2025-06-25 20:06:27,455 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:27,455 - action_logger - INFO - Window window_003: Closing window due to high humidity (71.75%)
+2025-06-25 20:06:29,455 - action_logger - INFO - Window window_001: Closing window due to high humidity (77.03%)
+2025-06-25 20:06:29,457 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:29,457 - action_logger - INFO - Window window_003: Closing window due to high humidity (72.01%)
+2025-06-25 20:06:31,456 - action_logger - INFO - Window window_001: Closing window due to high humidity (77.24%)
+2025-06-25 20:06:31,458 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:31,458 - action_logger - INFO - Window window_003: Closing window due to high humidity (72.18%)
+2025-06-25 20:06:33,457 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:33,457 - action_logger - INFO - Window window_001: Closing window due to high humidity (77.35%)
+2025-06-25 20:06:33,459 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:33,459 - action_logger - INFO - Window window_003: Closing window due to high humidity (72.44%)
+2025-06-25 20:06:34,956 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:35,459 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:35,459 - action_logger - INFO - Window window_001: Closing window due to high humidity (77.52%)
+2025-06-25 20:06:35,460 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:35,460 - action_logger - INFO - Window window_003: Closing window due to high humidity (72.6%)
+2025-06-25 20:06:37,460 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:37,460 - action_logger - INFO - Window window_001: Closing window due to high humidity (77.79%)
+2025-06-25 20:06:37,461 - action_logger - INFO - Window window_003: Closing window due to high humidity (72.84%)
+2025-06-25 20:06:38,959 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:39,461 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:39,461 - action_logger - INFO - Window window_001: Closing window due to high humidity (78.03%)
+2025-06-25 20:06:39,463 - action_logger - INFO - Window window_003: Closing window due to high humidity (73.08%)
+2025-06-25 20:06:40,961 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:41,464 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:41,464 - action_logger - INFO - Window window_001: Closing window due to high humidity (78.29%)
+2025-06-25 20:06:41,465 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:41,465 - action_logger - INFO - Window window_003: Closing window due to high humidity (73.3%)
+2025-06-25 20:06:42,962 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:43,466 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+6%)
+2025-06-25 20:06:43,466 - action_logger - INFO - Window window_001: Closing window due to high humidity (78.5%)
+2025-06-25 20:06:44,964 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:45,467 - action_logger - INFO - Window window_001: Closing window due to high humidity (78.74%)
+2025-06-25 20:06:45,467 - action_logger - INFO - Window window_003: Closing window due to high humidity (73.85%)
+2025-06-25 20:06:47,469 - action_logger - INFO - Window window_003: Closing window due to high humidity (74.15%)
+2025-06-25 20:06:47,469 - action_logger - INFO - Window window_001: Closing window due to high humidity (78.97%)
+2025-06-25 20:06:49,471 - action_logger - INFO - Window window_003: Closing window due to high humidity (74.31%)
+2025-06-25 20:06:51,472 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+4%)
+2025-06-25 20:06:51,472 - action_logger - INFO - Window window_003: Closing window due to high humidity (74.54%)
+2025-06-25 20:06:53,473 - action_logger - INFO - Window window_003: Closing window due to high humidity (74.69%)
+2025-06-25 20:06:54,970 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:55,476 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+83%)
+2025-06-25 20:06:55,476 - action_logger - INFO - Window window_001: Closing window due to high humidity (79.85%)
+2025-06-25 20:06:56,971 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:57,478 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:57,478 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.05%)
+2025-06-25 20:06:57,478 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.08%)
+2025-06-25 20:06:58,973 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:59,479 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:06:59,479 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.24%)
+2025-06-25 20:06:59,479 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.35%)
+2025-06-25 20:07:00,974 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:01,481 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:01,481 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.57%)
+2025-06-25 20:07:01,481 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.51%)
+2025-06-25 20:07:02,975 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:03,482 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:03,482 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.76%)
+2025-06-25 20:07:03,482 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.71%)
+2025-06-25 20:07:04,977 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:05,484 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:05,484 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.96%)
+2025-06-25 20:07:05,484 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.03%)
+2025-06-25 20:07:06,977 - action_logger - INFO - Window window_001: Window state changed to CLOSED.
+2025-06-25 20:07:07,485 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:07,485 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.19%)
+2025-06-25 20:07:07,485 - action_logger - INFO - Window window_003: Closing window due to high humidity (76.2%)
+2025-06-25 20:07:09,487 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:09,487 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:09,487 - action_logger - INFO - Window window_003: Closing window due to high humidity (76.39%)
+2025-06-25 20:07:09,487 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.35%)
+2025-06-25 20:07:11,488 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:11,488 - action_logger - INFO - Window window_003: Closing window due to high humidity (76.53%)
+2025-06-25 20:07:13,489 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:13,489 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.56%)
+2025-06-25 20:07:13,490 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:13,490 - action_logger - INFO - Window window_003: Closing window due to high humidity (76.74%)
+2025-06-25 20:07:14,983 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:15,490 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:15,490 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.85%)
+2025-06-25 20:07:15,491 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:15,491 - action_logger - INFO - Window window_003: Closing window due to high humidity (76.88%)
+2025-06-25 20:07:16,984 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:17,491 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:17,491 - action_logger - INFO - Window window_001: Closing window due to high humidity (82.07%)
+2025-06-25 20:07:17,492 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:17,492 - action_logger - INFO - Window window_003: Closing window due to high humidity (77.04%)
+2025-06-25 20:07:18,985 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:19,492 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:19,493 - action_logger - INFO - Window window_001: Closing window due to high humidity (82.24%)
+2025-06-25 20:07:19,493 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:19,493 - action_logger - INFO - Window window_003: Closing window due to high humidity (77.14%)
+2025-06-25 20:07:20,987 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:21,493 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:21,494 - action_logger - INFO - Window window_001: Closing window due to high humidity (82.4%)
+2025-06-25 20:07:21,494 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:21,494 - action_logger - INFO - Window window_003: Closing window due to high humidity (77.38%)
+2025-06-25 20:07:22,988 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:23,495 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:23,495 - action_logger - INFO - Window window_001: Closing window due to high humidity (82.67%)
+2025-06-25 20:07:23,495 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:23,495 - action_logger - INFO - Window window_003: Closing window due to high humidity (77.61%)
+2025-06-25 20:07:24,989 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:25,496 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:25,496 - action_logger - INFO - Window window_001: Closing window due to high humidity (82.85%)
+2025-06-25 20:07:25,497 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:25,497 - action_logger - INFO - Window window_003: Closing window due to high humidity (77.79%)
+2025-06-25 20:07:26,990 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:27,497 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:27,497 - action_logger - INFO - Window window_001: Closing window due to high humidity (83.12%)
+2025-06-25 20:07:27,499 - action_logger - INFO - Window window_003: Closing window due to high humidity (78.0%)
+2025-06-25 20:07:28,992 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:29,498 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:29,498 - action_logger - INFO - Window window_001: Closing window due to high humidity (83.27%)
+2025-06-25 20:07:29,500 - action_logger - INFO - Window window_003: Closing window due to high humidity (78.24%)
+2025-06-25 20:07:30,993 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:31,500 - action_logger - INFO - Window window_001: Closing window due to high humidity (83.42%)
+2025-06-25 20:07:31,502 - action_logger - INFO - Window window_003: Closing window due to high humidity (78.37%)
+2025-06-25 20:07:33,501 - action_logger - INFO - Window window_001: Closing window due to high humidity (83.56%)
+2025-06-25 20:07:33,503 - action_logger - INFO - Window window_003: Closing window due to high humidity (78.61%)
+2025-06-25 20:07:35,502 - action_logger - INFO - Window window_001: Closing window due to high humidity (83.84%)
+2025-06-25 20:07:35,505 - action_logger - INFO - Window window_003: Closing window due to high humidity (78.8%)
+2025-06-25 20:07:37,504 - action_logger - INFO - Window window_001: Closing window due to high humidity (83.97%)
+2025-06-25 20:07:37,506 - action_logger - INFO - Window window_003: Closing window due to high humidity (78.87%)
+2025-06-25 20:07:39,505 - action_logger - INFO - Window window_001: Closing window due to high humidity (84.25%)
+2025-06-25 20:07:39,507 - action_logger - INFO - Window window_003: Closing window due to high humidity (79.03%)
+2025-06-25 20:07:40,999 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:41,507 - action_logger - INFO - Window window_001: Closing window due to high humidity (84.44%)
+2025-06-25 20:07:41,508 - action_logger - INFO - Window window_003: Closing window due to high humidity (79.23%)
+2025-06-25 20:07:43,000 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:43,507 - action_logger - INFO - Window window_001: Closing window due to high humidity (84.69%)
+2025-06-25 20:07:43,509 - action_logger - INFO - Window window_003: Closing window due to high humidity (79.41%)
+2025-06-25 20:07:45,002 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:45,509 - action_logger - INFO - Window window_001: Closing window due to high humidity (84.9%)
+2025-06-25 20:07:45,510 - action_logger - INFO - Window window_003: Closing window due to high humidity (79.63%)
+2025-06-25 20:07:47,004 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:47,510 - action_logger - INFO - Window window_001: Closing window due to high humidity (85.05%)
+2025-06-25 20:07:47,511 - action_logger - INFO - Window window_003: Closing window due to high humidity (79.89%)
+2025-06-25 20:07:49,005 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:49,511 - action_logger - INFO - Window window_001: Closing window due to high humidity (85.21%)
+2025-06-25 20:07:49,513 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.09%)
+2025-06-25 20:07:51,006 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:51,513 - action_logger - INFO - Window window_001: Closing window due to high humidity (85.49%)
+2025-06-25 20:07:51,514 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.31%)
+2025-06-25 20:07:53,007 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:53,515 - action_logger - INFO - Window window_001: Closing window due to high humidity (85.46%)
+2025-06-25 20:07:53,516 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.48%)
+2025-06-25 20:07:55,009 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:55,516 - action_logger - INFO - Window window_001: Closing window due to high humidity (85.3%)
+2025-06-25 20:07:55,517 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.57%)
+2025-06-25 20:07:57,010 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:57,517 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:57,517 - action_logger - INFO - Window window_001: Closing window due to high humidity (85.1%)
+2025-06-25 20:07:57,519 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.57%)
+2025-06-25 20:07:59,012 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:59,519 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:59,519 - action_logger - INFO - Window window_001: Closing window due to high humidity (84.94%)
+2025-06-25 20:07:59,520 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:07:59,520 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.59%)
+2025-06-25 20:08:01,013 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:01,520 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:01,520 - action_logger - INFO - Window window_001: Closing window due to high humidity (84.73%)
+2025-06-25 20:08:01,521 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.6%)
+2025-06-25 20:08:03,015 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:03,521 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:03,521 - action_logger - INFO - Window window_001: Closing window due to high humidity (84.47%)
+2025-06-25 20:08:03,522 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.55%)
+2025-06-25 20:08:05,016 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:05,522 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:05,522 - action_logger - INFO - Window window_001: Closing window due to high humidity (84.27%)
+2025-06-25 20:08:05,524 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.55%)
+2025-06-25 20:08:07,017 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:07,523 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:07,524 - action_logger - INFO - Window window_001: Closing window due to high humidity (84.0%)
+2025-06-25 20:08:07,525 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.51%)
+2025-06-25 20:08:09,018 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:09,525 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:09,525 - action_logger - INFO - Window window_001: Closing window due to high humidity (83.85%)
+2025-06-25 20:08:09,526 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:09,526 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.47%)
+2025-06-25 20:08:11,526 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:11,526 - action_logger - INFO - Window window_001: Closing window due to high humidity (83.72%)
+2025-06-25 20:08:11,527 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:11,527 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.52%)
+2025-06-25 20:08:13,527 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:13,527 - action_logger - INFO - Window window_001: Closing window due to high humidity (83.52%)
+2025-06-25 20:08:13,529 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:13,529 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.51%)
+2025-06-25 20:08:15,528 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:15,528 - action_logger - INFO - Window window_001: Closing window due to high humidity (83.25%)
+2025-06-25 20:08:15,531 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:15,531 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.47%)
+2025-06-25 20:08:17,530 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:17,530 - action_logger - INFO - Window window_001: Closing window due to high humidity (83.09%)
+2025-06-25 20:08:17,532 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:17,532 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.43%)
+2025-06-25 20:08:19,532 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:19,532 - action_logger - INFO - Window window_001: Closing window due to high humidity (82.75%)
+2025-06-25 20:08:19,534 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:19,534 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.39%)
+2025-06-25 20:08:21,533 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:21,533 - action_logger - INFO - Window window_001: Closing window due to high humidity (82.58%)
+2025-06-25 20:08:21,535 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.34%)
+2025-06-25 20:08:23,028 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:23,535 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:23,535 - action_logger - INFO - Window window_001: Closing window due to high humidity (82.38%)
+2025-06-25 20:08:23,537 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.35%)
+2025-06-25 20:08:25,536 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:25,536 - action_logger - INFO - Window window_001: Closing window due to high humidity (82.18%)
+2025-06-25 20:08:25,538 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.42%)
+2025-06-25 20:08:27,030 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:27,538 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:27,538 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.99%)
+2025-06-25 20:08:27,539 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.38%)
+2025-06-25 20:08:29,032 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:29,539 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:29,539 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.84%)
+2025-06-25 20:08:29,541 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.42%)
+2025-06-25 20:08:31,035 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:31,540 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:31,540 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.55%)
+2025-06-25 20:08:31,542 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.41%)
+2025-06-25 20:08:33,542 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:33,542 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.41%)
+2025-06-25 20:08:33,543 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.37%)
+2025-06-25 20:08:35,536 - action_logger - INFO - Window window_002: Window state changed to CLOSED.
+2025-06-25 20:08:35,536 - action_logger - INFO - Window window_002: ALARM ACTIVATED! Reason: High temperature (30.15°C)
+2025-06-25 20:08:35,536 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:35,544 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:35,544 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.13%)
+2025-06-25 20:08:35,545 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:35,545 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.38%)
+2025-06-25 20:08:37,537 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:37,546 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:37,546 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.97%)
+2025-06-25 20:08:37,546 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:37,546 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.3%)
+2025-06-25 20:08:39,538 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:39,547 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:39,547 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.67%)
+2025-06-25 20:08:39,548 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:39,548 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.36%)
+2025-06-25 20:08:41,540 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:41,548 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:41,548 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.52%)
+2025-06-25 20:08:41,549 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:41,549 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.35%)
+2025-06-25 20:08:43,541 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:43,549 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:43,550 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.45%)
+2025-06-25 20:08:43,550 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:43,550 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.38%)
+2025-06-25 20:08:45,543 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:45,551 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:45,551 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:45,551 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.45%)
+2025-06-25 20:08:45,551 - action_logger - INFO - Window window_003: Closing window due to high humidity (80.18%)
+2025-06-25 20:08:47,545 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:47,552 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.5%)
+2025-06-25 20:08:47,552 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:47,552 - action_logger - INFO - Window window_003: Closing window due to high humidity (79.99%)
+2025-06-25 20:08:49,546 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:49,553 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.58%)
+2025-06-25 20:08:49,554 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:49,554 - action_logger - INFO - Window window_003: Closing window due to high humidity (79.77%)
+2025-06-25 20:08:51,547 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:51,554 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.66%)
+2025-06-25 20:08:51,556 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:51,556 - action_logger - INFO - Window window_003: Closing window due to high humidity (79.57%)
+2025-06-25 20:08:53,548 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:53,555 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:53,555 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.74%)
+2025-06-25 20:08:53,557 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:53,557 - action_logger - INFO - Window window_003: Closing window due to high humidity (79.28%)
+2025-06-25 20:08:55,550 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:55,556 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:55,556 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.83%)
+2025-06-25 20:08:55,557 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:55,557 - action_logger - INFO - Window window_003: Closing window due to high humidity (79.09%)
+2025-06-25 20:08:57,551 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:57,557 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:57,557 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.86%)
+2025-06-25 20:08:57,559 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:57,559 - action_logger - INFO - Window window_003: Closing window due to high humidity (78.87%)
+2025-06-25 20:08:59,553 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:59,558 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:59,558 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.0%)
+2025-06-25 20:08:59,560 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:08:59,560 - action_logger - INFO - Window window_003: Closing window due to high humidity (78.66%)
+2025-06-25 20:09:01,554 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:01,559 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.1%)
+2025-06-25 20:09:01,561 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:01,561 - action_logger - INFO - Window window_003: Closing window due to high humidity (78.42%)
+2025-06-25 20:09:03,560 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.1%)
+2025-06-25 20:09:03,562 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:03,562 - action_logger - INFO - Window window_003: Closing window due to high humidity (78.2%)
+2025-06-25 20:09:05,561 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.22%)
+2025-06-25 20:09:05,563 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:05,563 - action_logger - INFO - Window window_003: Closing window due to high humidity (77.96%)
+2025-06-25 20:09:07,562 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.2%)
+2025-06-25 20:09:07,565 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:07,565 - action_logger - INFO - Window window_003: Closing window due to high humidity (77.78%)
+2025-06-25 20:09:09,564 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.24%)
+2025-06-25 20:09:09,566 - action_logger - INFO - Window window_003: Closing window due to high humidity (77.6%)
+2025-06-25 20:09:11,565 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.15%)
+2025-06-25 20:09:11,567 - action_logger - INFO - Window window_003: Closing window due to high humidity (77.44%)
+2025-06-25 20:09:13,061 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:13,567 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.09%)
+2025-06-25 20:09:13,569 - action_logger - INFO - Window window_003: Closing window due to high humidity (77.33%)
+2025-06-25 20:09:14,062 - action_logger - INFO - Window window_002: ALARM ACTIVATED! Reason: High temperature (30.05°C)
+2025-06-25 20:09:15,063 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:15,562 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:15,569 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.0%)
+2025-06-25 20:09:15,570 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:15,570 - action_logger - INFO - Window window_003: Closing window due to high humidity (77.08%)
+2025-06-25 20:09:17,064 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:17,563 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:17,570 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.96%)
+2025-06-25 20:09:17,572 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:17,572 - action_logger - INFO - Window window_003: Closing window due to high humidity (76.79%)
+2025-06-25 20:09:19,566 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:19,571 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.97%)
+2025-06-25 20:09:19,573 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:19,573 - action_logger - INFO - Window window_003: Closing window due to high humidity (76.52%)
+2025-06-25 20:09:21,568 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:21,572 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.9%)
+2025-06-25 20:09:21,574 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:21,574 - action_logger - INFO - Window window_003: Closing window due to high humidity (76.37%)
+2025-06-25 20:09:23,569 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:23,574 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.95%)
+2025-06-25 20:09:23,576 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:23,576 - action_logger - INFO - Window window_003: Closing window due to high humidity (76.1%)
+2025-06-25 20:09:24,070 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:25,575 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.01%)
+2025-06-25 20:09:25,577 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:25,577 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.86%)
+2025-06-25 20:09:26,071 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:27,576 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.99%)
+2025-06-25 20:09:27,578 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:27,578 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.64%)
+2025-06-25 20:09:28,073 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:29,577 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.02%)
+2025-06-25 20:09:29,579 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:29,579 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.54%)
+2025-06-25 20:09:30,074 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:31,579 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.09%)
+2025-06-25 20:09:31,580 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.34%)
+2025-06-25 20:09:32,075 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:33,580 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.07%)
+2025-06-25 20:09:33,582 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.22%)
+2025-06-25 20:09:34,077 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:35,577 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:35,581 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:35,581 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.08%)
+2025-06-25 20:09:35,583 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.35%)
+2025-06-25 20:09:36,079 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:37,578 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:37,583 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:37,583 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.97%)
+2025-06-25 20:09:37,584 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.5%)
+2025-06-25 20:09:38,080 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:39,580 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:39,585 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:39,585 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.89%)
+2025-06-25 20:09:39,586 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:39,586 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.77%)
+2025-06-25 20:09:40,082 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:41,587 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:41,587 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.96%)
+2025-06-25 20:09:41,588 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:41,588 - action_logger - INFO - Window window_003: Closing window due to high humidity (75.92%)
+2025-06-25 20:09:42,083 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:43,588 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:43,588 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.99%)
+2025-06-25 20:09:43,590 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:43,590 - action_logger - INFO - Window window_003: Closing window due to high humidity (76.16%)
+2025-06-25 20:09:44,085 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:45,590 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.02%)
+2025-06-25 20:09:45,592 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:45,592 - action_logger - INFO - Window window_003: Closing window due to high humidity (76.45%)
+2025-06-25 20:09:46,086 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:47,586 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:47,591 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.97%)
+2025-06-25 20:09:47,594 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:47,594 - action_logger - INFO - Window window_003: Closing window due to high humidity (76.65%)
+2025-06-25 20:09:48,088 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:49,588 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:49,593 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:49,593 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.96%)
+2025-06-25 20:09:49,596 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:49,596 - action_logger - INFO - Window window_003: Closing window due to high humidity (76.8%)
+2025-06-25 20:09:50,090 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:51,590 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:51,595 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:51,595 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.03%)
+2025-06-25 20:09:51,598 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:51,598 - action_logger - INFO - Window window_003: Closing window due to high humidity (77.06%)
+2025-06-25 20:09:52,091 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:53,090 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:53,597 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:53,597 - action_logger - INFO - Window window_001: Closing window due to high humidity (80.97%)
+2025-06-25 20:09:53,599 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:53,599 - action_logger - INFO - Window window_003: Closing window due to high humidity (77.27%)
+2025-06-25 20:09:54,093 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:55,092 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:55,598 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:55,598 - action_logger - INFO - Window window_001: Closing window due to high humidity (81.01%)
+2025-06-25 20:09:55,600 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:55,600 - action_logger - INFO - Window window_003: Closing window due to high humidity (77.52%)
+2025-06-25 20:09:56,094 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:09:57,093 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:15,244 - action_logger - INFO - Window window_002: Window state changed to CLOSED.
+2025-06-25 20:12:15,298 - action_logger - INFO - Window window_002: ALARM ACTIVATED! Reason: High temperature (30.13°C)
+2025-06-25 20:12:15,347 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:17,399 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:19,449 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:21,501 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:23,556 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:25,609 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:27,663 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:29,715 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:31,767 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:33,819 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:35,871 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:35,921 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.18%)
+2025-06-25 20:12:37,972 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:38,023 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.46%)
+2025-06-25 20:12:40,074 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.65%)
+2025-06-25 20:12:42,127 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.79%)
+2025-06-25 20:12:44,181 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.86%)
+2025-06-25 20:12:46,233 - action_logger - INFO - Window window_002: Closing window due to high humidity (71.11%)
+2025-06-25 20:12:48,287 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:48,341 - action_logger - INFO - Window window_002: Closing window due to high humidity (71.25%)
+2025-06-25 20:12:50,390 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:50,442 - action_logger - INFO - Window window_002: Closing window due to high humidity (71.33%)
+2025-06-25 20:12:52,492 - action_logger - INFO - Window window_002: Closing window due to high humidity (71.61%)
+2025-06-25 20:12:54,547 - action_logger - INFO - Window window_002: Closing window due to high humidity (71.86%)
+2025-06-25 20:12:56,599 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:56,650 - action_logger - INFO - Window window_002: Closing window due to high humidity (72.04%)
+2025-06-25 20:12:58,701 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:12:58,755 - action_logger - INFO - Window window_002: Closing window due to high humidity (72.16%)
+2025-06-25 20:13:00,805 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:00,855 - action_logger - INFO - Window window_002: Closing window due to high humidity (72.4%)
+2025-06-25 20:13:02,907 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:02,961 - action_logger - INFO - Window window_002: Closing window due to high humidity (72.68%)
+2025-06-25 20:13:05,011 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:05,063 - action_logger - INFO - Window window_002: Closing window due to high humidity (72.96%)
+2025-06-25 20:13:07,116 - action_logger - INFO - Window window_002: Closing window due to high humidity (73.19%)
+2025-06-25 20:13:09,167 - action_logger - INFO - Window window_002: Closing window due to high humidity (73.48%)
+2025-06-25 20:13:11,226 - action_logger - INFO - Window window_002: Closing window due to high humidity (73.52%)
+2025-06-25 20:13:11,453 - action_logger - INFO - Window window_002: Window state changed to CLOSED.
+2025-06-25 20:13:11,505 - action_logger - INFO - Window window_002: ALARM ACTIVATED! Reason: High temperature (30.09°C)
+2025-06-25 20:13:11,553 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:13,279 - action_logger - INFO - Window window_002: Closing window due to high humidity (73.69%)
+2025-06-25 20:13:13,604 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:15,332 - action_logger - INFO - Window window_002: Closing window due to high humidity (73.88%)
+2025-06-25 20:13:15,656 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:17,383 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.1%)
+2025-06-25 20:13:17,708 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:19,437 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:19,488 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.48%)
+2025-06-25 20:13:19,760 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:21,539 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.62%)
+2025-06-25 20:13:23,592 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.91%)
+2025-06-25 20:13:25,646 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:25,696 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.89%)
+2025-06-25 20:13:27,746 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.9%)
+2025-06-25 20:13:29,799 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.79%)
+2025-06-25 20:13:31,852 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.68%)
+2025-06-25 20:13:33,905 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.64%)
+2025-06-25 20:13:35,958 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.74%)
+2025-06-25 20:13:38,014 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.72%)
+2025-06-25 20:13:40,069 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:40,119 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.75%)
+2025-06-25 20:13:42,168 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:42,220 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.76%)
+2025-06-25 20:13:44,271 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.76%)
+2025-06-25 20:13:46,323 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.76%)
+2025-06-25 20:13:48,376 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:48,428 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.77%)
+2025-06-25 20:13:49,477 - action_logger - INFO - Window window_001: Window state changed to CLOSED.
+2025-06-25 20:13:49,529 - action_logger - INFO - Window window_001: ALARM ACTIVATED! Reason: High temperature (30.01°C)
+2025-06-25 20:13:50,479 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:50,535 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.71%)
+2025-06-25 20:13:51,479 - action_logger - INFO - Window window_003: Window state changed to CLOSED.
+2025-06-25 20:13:51,529 - action_logger - INFO - Window window_003: ALARM ACTIVATED! Reason: High temperature (30.07°C)
+2025-06-25 20:13:51,576 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:52,586 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:52,638 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.71%)
+2025-06-25 20:13:54,693 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:54,745 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.68%)
+2025-06-25 20:13:56,796 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:56,847 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.7%)
+2025-06-25 20:13:58,896 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:58,948 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.63%)
+2025-06-25 20:13:59,585 - action_logger - INFO - Window window_001: Motion detected while alarm is ACTIVE!
+2025-06-25 20:13:59,634 - action_logger - INFO - Window window_003: Motion detected while alarm is ACTIVE!
+2025-06-25 20:14:00,998 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:14:01,053 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.59%)
+2025-06-25 20:21:40,751 - action_logger - INFO - Window window_002: Manual control changed from False to True
+2025-06-25 20:21:40,806 - action_logger - INFO - API: Set manual control for window_002 to True
+2025-06-25 20:21:41,627 - action_logger - INFO - Window window_002: Manual control changed from True to False
+2025-06-25 20:21:41,681 - action_logger - INFO - API: Set manual control for window_002 to False
+2025-06-25 20:21:42,228 - action_logger - INFO - Window window_001: Manual control changed from False to True
+2025-06-25 20:21:42,282 - action_logger - INFO - API: Set manual control for window_001 to True
+2025-06-25 20:21:43,401 - action_logger - INFO - Window window_003: Manual control changed from False to True
+2025-06-25 20:21:43,455 - action_logger - INFO - API: Set manual control for window_003 to True
+2025-06-25 20:21:44,774 - action_logger - INFO - Window window_002: Manual control changed from False to True
+2025-06-25 20:21:44,826 - action_logger - INFO - API: Set manual control for window_002 to True
+2025-06-25 20:21:45,566 - action_logger - INFO - Window window_002: Manual control changed from True to False
+2025-06-25 20:21:45,617 - action_logger - INFO - API: Set manual control for window_002 to False
+2025-06-25 20:21:46,334 - action_logger - INFO - Window window_001: Manual control changed from True to False
+2025-06-25 20:21:46,385 - action_logger - INFO - API: Set manual control for window_001 to False
+2025-06-25 20:21:47,409 - action_logger - INFO - Window window_003: Manual control changed from True to False
+2025-06-25 20:21:47,461 - action_logger - INFO - API: Set manual control for window_003 to False
+2025-06-25 20:24:38,140 - action_logger - INFO - Window window_002: Manual control changed from False to True
+2025-06-25 20:24:38,194 - action_logger - INFO - API: Set manual control for window_002 to True
+2025-06-25 20:24:39,964 - action_logger - INFO - API: Manually opened window window_002
+2025-06-25 20:24:41,665 - action_logger - INFO - Window window_002: Window state changed to CLOSED.
+2025-06-25 20:24:41,716 - action_logger - INFO - API: Manually closed window window_002
+2025-06-25 20:24:47,235 - action_logger - INFO - Window window_002: ALARM ACTIVATED! Reason: Manual activation via API
+2025-06-25 20:24:47,286 - action_logger - INFO - API: Manually activated alarm for window_002
+2025-06-25 20:24:48,588 - action_logger - INFO - Window window_001: Manual control changed from False to True
+2025-06-25 20:24:48,640 - action_logger - INFO - API: Set manual control for window_001 to True
+2025-06-25 20:25:09,807 - action_logger - INFO - Window window_002: Manual control changed from True to False
+2025-06-25 20:25:09,860 - action_logger - INFO - API: Set manual control for window_002 to False
+2025-06-25 20:25:11,136 - action_logger - INFO - Window window_001: Manual control changed from True to False
+2025-06-25 20:25:11,188 - action_logger - INFO - API: Set manual control for window_001 to False
+2025-06-25 20:25:14,282 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-25 20:25:16,336 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
