@@ -11,9 +11,9 @@ System_Ext(physical_windows, "System Okienny", "Fizyczne okna z mechanizmami.")
 System_Ext(sensor_system, "System Czujników", "Dostarcza dane oświetleniowe i bezpieczeństwa.")
 
 System_Boundary(c1, "Smart Windows Manager") {
-    Container(web_app, "Aplikacja Webowa", "Technologia: HTML, CSS, JavaScript, Framework UI", "Udostępnia interfejs użytkownika do zdalnego sterowania, konfiguracji preferencji i scenariuszy.")
-    Container(api_service, "Serwis API / System Główny", "Technologia: np. Python/Java/Node.js, Framework API", "Obsługuje logikę biznesową: automatyzację, przetwarzanie danych z czujników, zarządzanie scenariuszami, aktywację blokad, komunikację z oknami.")
-    ContainerDb(database, "Baza Danych", "Technologia: np. PostgreSQL, MySQL, MongoDB", "Przechowuje ustawienia użytkownika, zdefiniowane scenariusze, historię zdarzeń (opcjonalnie), konfigurację systemu.")
+    Container(web_app, "Aplikacja Webowa", "Technologia: React, JavaScript, HTML, CSS", "Udostępnia interfejs użytkownika do zdalnego sterowania, konfiguracji preferencji.")
+    Container(api_service, "Serwis API / System Główny", "Technologia: Python", "Obsługuje logikę biznesową: automatyzację, przetwarzanie danych z czujników, zarządzanie scenariuszami, reczną aktywację blokad, komunikację z oknami.")
+    ContainerDb(database, "Baza Danych", "Azure Blob Storage", "Przechowuje ustawienia użytkownika, zdefiniowane scenariusze, historię zdarzeń .")
 }
 
 Rel_D(user, web_app, "Używa (przegląda, konfiguruje, steruje)", "HTTPS")
