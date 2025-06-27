@@ -13,10 +13,10 @@ System_Ext(sensor_system_ext, "System Czujników", "Dostarcza dane o świetle i 
 
 
 Container_Boundary(api_c, "Serwis API / System Główny") {
-    Component(api_controller, "Kontroler API", "np. Spring Boot Controllers, FastAPI Endpoints", "Odbiera żądania HTTP z Aplikacji Webowej, waliduje je, autoryzuje i przekazuje do odpowiednich serwisów wewnętrznych. Formatuje odpowiedzi.")
-    Component(window_service, "Serwis Zarządzania Oknami", "Logika biznesowa", "Odpowiada za logikę sterowania oknami (otwieranie, zamykanie, ściemnianie, blokady). Komunikuje się z adapterem sprzętowym okien.")
+    Component(api_controller, "Kontroler API", "Odbiera żądania HTTP z Aplikacji Webowej, waliduje je, autoryzuje i przekazuje do odpowiednich serwisów wewnętrznych. Formatuje odpowiedzi.")
+    Component(window_service, "Serwis Zarządzania Oknami", "Logika biznesowa", "Odpowiada za logikę sterowania oknami (otwieranie, zamykanie, blokady). Komunikuje się z adapterem sprzętowym okien.")
     Component(data_analysis_service, "Serwis Analizy Danych / Silnik Reguł", "Logika biznesowa", "Przetwarza dane z czujników, stosuje reguły automatyzacji (np. optymalne warunki świetlne) i bezpieczeństwa.")
-    Component(scenario_service, "Serwis Scenariuszy", "Logika biznesowa", "Zarządza tworzeniem, modyfikacją, przechowywaniem i wykonywaniem scenariuszy zdefiniowanych przez użytkownika (np. 'tryb poranny', 'tryb wyjścia z domu').")
+    Component(scenario_service, "Serwis Scenariuszy", "Logika biznesowa", "Zarządza tworzeniem, modyfikacją")
     Component(security_module, "Moduł Bezpieczeństwa", "Logika biznesowa", "Obsługuje logikę antywłamaniową, reaguje na zidentyfikowane zagrożenia, zarządza aktywacją blokad.")
 
     Component(window_hw_adapter, "Adapter Sprzętowy Okien", "Interfejs komunikacyjny", "Abstrahuje i obsługuje komunikację ze sprzętem okiennym (Systemem Okiennym). Tłumaczy generyczne polecenia na specyficzne dla sprzętu.")
