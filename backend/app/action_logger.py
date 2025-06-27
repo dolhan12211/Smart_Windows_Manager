@@ -62,7 +62,10 @@ action_logger.addHandler(file_handler)
 action_logger.propagate = False
 
 def log_action(message: str):
-    full_message = f"{logging.Formatter('%(asctime)s - %(levelname)s - %(message)s').format(logging.LogRecord('action_logger', logging.INFO, '', 0, message, [], None))}\n"
+    # Create a LogRecord manually to ensure the logger name is included in the formatted message for Azure
+    record = logging.LogRecord('action_logger', logging.INFO, '', 0, message, [], None)
+    # Use the same formatter as the file_handler for consistency
+    formatted_log_line = f"{formatter.format(record)}\n"
     
     # Log to local file
     action_logger.info(message)
@@ -70,7 +73,12 @@ def log_action(message: str):
     # Log to Azure Blob Storage if connected
     if blob_service_client:
         try:
-            blob_client.append_block(full_message.encode('utf-8'))
+            # The error "Invalid base64-encoded string" suggests append_block might be misinterpreting the data.
+            # Let's ensure we're sending plain bytes and not something that could be mistaken for base64.
+            # The previous error message "number of data characters (9) cannot be 1 more than a multiple of 4"
+            # is very specific to base64 padding.
+            # We will send the raw bytes of the formatted log line.
+            blob_client.append_block(formatted_log_line.encode('utf-8'))
         except Exception as e:
             print(f"Failed to upload log to Azure Blob Storage: {e}")
             # Fallback to local logging if Azure upload fails

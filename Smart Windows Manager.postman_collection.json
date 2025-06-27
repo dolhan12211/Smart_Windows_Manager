@@ -7,6 +7,64 @@
 	},
 	"item": [
 		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"admin\",\n  \"password\": \"adminpass\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					]
+				},
+				"description": "Use this endpoint to get a JWT token. The default credentials are username: 'admin', password: 'adminpass'."
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"newuser\",\n  \"password\": \"newpass\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"register"
+					]
+				},
+				"description": "Use this endpoint to register a new user. Default test user 'testuser' with password 'testpass' is already available."
+			},
+			"response": []
+		},
+		{
 			"name": "Get Sensor Data",
 			"request": {
 				"method": "GET",
@@ -26,13 +84,18 @@
 			"response": []
 		},
 		{
-			"name": "Set Manual Control",
+			"name": "Set Manual Control (Protected)",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
 						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer YOUR_JWT_TOKEN_HERE",
+						"description": "Replace YOUR_JWT_TOKEN_HERE with the token obtained from the /login endpoint."
 					}
 				],
 				"body": {
@@ -50,15 +113,22 @@
 						"set_manual_control",
 						"window_001"
 					]
-				}
+				},
+				"description": "This endpoint requires a valid JWT token in the Authorization header."
 			},
 			"response": []
 		},
 		{
-			"name": "Open Window",
+			"name": "Open Window (Protected)",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer YOUR_JWT_TOKEN_HERE",
+						"description": "Replace YOUR_JWT_TOKEN_HERE with the token obtained from the /login endpoint."
+					}
+				],
 				"url": {
 					"raw": "http://localhost:8000/open_window/window_001",
 					"protocol": "http",
@@ -70,15 +140,22 @@
 						"open_window",
 						"window_001"
 					]
-				}
+				},
+				"description": "This endpoint requires a valid JWT token in the Authorization header."
 			},
 			"response": []
 		},
 		{
-			"name": "Close Window",
+			"name": "Close Window (Protected)",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer YOUR_JWT_TOKEN_HERE",
+						"description": "Replace YOUR_JWT_TOKEN_HERE with the token obtained from the /login endpoint."
+					}
+				],
 				"url": {
 					"raw": "http://localhost:8000/close_window/window_001",
 					"protocol": "http",
@@ -90,15 +167,22 @@
 						"close_window",
 						"window_001"
 					]
-				}
+				},
+				"description": "This endpoint requires a valid JWT token in the Authorization header."
 			},
 			"response": []
 		},
 		{
-			"name": "Activate Alarm",
+			"name": "Activate Alarm (Protected)",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer YOUR_JWT_TOKEN_HERE",
+						"description": "Replace YOUR_JWT_TOKEN_HERE with the token obtained from the /login endpoint."
+					}
+				],
 				"url": {
 					"raw": "http://localhost:8000/activate_alarm/window_001",
 					"protocol": "http",
@@ -110,15 +194,22 @@
 						"activate_alarm",
 						"window_001"
 					]
-				}
+				},
+				"description": "This endpoint requires a valid JWT token in the Authorization header."
 			},
 			"response": []
 		},
 		{
-			"name": "Deactivate Alarm",
+			"name": "Deactivate Alarm (Protected)",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer YOUR_JWT_TOKEN_HERE",
+						"description": "Replace YOUR_JWT_TOKEN_HERE with the token obtained from the /login endpoint."
+					}
+				],
 				"url": {
 					"raw": "http://localhost:8000/deactivate_alarm/window_001",
 					"protocol": "http",
@@ -130,7 +221,8 @@
 						"deactivate_alarm",
 						"window_001"
 					]
-				}
+				},
+				"description": "This endpoint requires a valid JWT token in the Authorization header."
 			},
 			"response": []
 		}

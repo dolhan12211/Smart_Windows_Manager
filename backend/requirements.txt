@@ -2,3 +2,5 @@ Flask
 Flask-Cors
 python-dotenv
 azure-storage-blob
+Werkzeug
+PyJWT

@@ -1,7 +1,7 @@
 import React from 'react';
 import SensorDisplay from './SensorDisplay';
 
-function WindowCard({ windowData }) {
+function WindowCard({ windowData, token }) {
   const { window_id, sensors, window_open, manual_control_enabled, alarm_active } = windowData;
 
   const windowStatusClass = window_open ? 'text-green-400' : 'text-red-400';
@@ -14,11 +14,11 @@ function WindowCard({ windowData }) {
 
   const sendCommand = async (endpoint, body = {}) => {
     try {
-      // Use the public IP address for browser access to the backend
       const response = await fetch(`http://4.233.221.95:8000/${endpoint}/${window_id}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}` // Include the JWT token
         },
         body: JSON.stringify(body),
       });

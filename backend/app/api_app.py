@@ -11,6 +11,7 @@ import atexit
 from .sensor_manager import SensorManager
 from .window import Window # Import Window class to use in type hints and for clarity
 from .action_logger import log_action # Import the custom action logger
+from .auth import authenticate_user, create_token, token_required, register_user # Import authentication functions
 
 # DataGenerator is now orchestrated by main.py, so no direct import/init here
 # from .data_generator import DataGenerator 
@@ -69,8 +70,44 @@ def receive_command():
         return jsonify({"status": "command received", "command": command})
     return {"status": "error", "message": "No command provided"}
 
+@app.route("/login", methods=["POST"])
+def login():
+    auth_data = request.get_json()
+    username = auth_data.get("username")
+    password = auth_data.get("password")
+
+    if not username or not password:
+        log_action(f"API: Login attempt failed - missing credentials for username: {username}")
+        return jsonify({"message": "Username and password are required!"}), 400
+
+    if authenticate_user(username, password):
+        token = create_token(username)
+        log_action(f"API: User {username} logged in successfully.")
+        return jsonify({"token": token}), 200
+    else:
+        log_action(f"API: Login attempt failed - invalid credentials for username: {username}")
+        return jsonify({"message": "Invalid credentials!"}), 401
+
+@app.route("/register", methods=["POST"])
+def register():
+    user_data = request.get_json()
+    username = user_data.get("username")
+    password = user_data.get("password")
+
+    if not username or not password:
+        return jsonify({"message": "Username and password are required!"}), 400
+
+    success, message = register_user(username, password)
+    if success:
+        log_action(f"API: User {username} registered successfully.")
+        return jsonify({"message": message}), 201
+    else:
+        log_action(f"API: Registration attempt failed for username: {username} - {message}")
+        return jsonify({"message": message}), 409 # Conflict
+
 @app.route("/set_manual_control/<window_id>", methods=["POST"])
-def set_manual_control(window_id: str):
+@token_required
+def set_manual_control(current_user: str, window_id: str):
     window = get_window_or_404(window_id)
     if isinstance(window, tuple): # Check if it's an error response
         return window
@@ -80,47 +117,51 @@ def set_manual_control(window_id: str):
         return jsonify({"status": "error", "message": "Missing 'enable' parameter"}), 400
     
     window.set_manual_control(enable)
-    log_action(f"API: Set manual control for {window_id} to {enable}") # Log this action
+    log_action(f"API: User {current_user} set manual control for {window_id} to {enable}") # Log this action
     return jsonify({"status": "ok", "window_id": window_id, "manual_control_enabled": enable})
 
 @app.route("/open_window/<window_id>", methods=["POST"])
-def open_window_manual(window_id: str):
+@token_required
+def open_window_manual(current_user: str, window_id: str):
     window = get_window_or_404(window_id)
     if isinstance(window, tuple):
         return window
     
     window.open_window()
-    log_action(f"API: Manually opened window {window_id}") # Log this action
+    log_action(f"API: User {current_user} manually opened window {window_id}") # Log this action
     return jsonify({"status": "ok", "window_id": window_id, "window_open": window.window_open})
 
 @app.route("/close_window/<window_id>", methods=["POST"])
-def close_window_manual(window_id: str):
+@token_required
+def close_window_manual(current_user: str, window_id: str):
     window = get_window_or_404(window_id)
     if isinstance(window, tuple):
         return window
     
     window.close_window()
-    log_action(f"API: Manually closed window {window_id}") # Log this action
+    log_action(f"API: User {current_user} manually closed window {window_id}") # Log this action
     return jsonify({"status": "ok", "window_id": window_id, "window_open": window.window_open})
 
 @app.route("/activate_alarm/<window_id>", methods=["POST"])
-def activate_alarm_manual(window_id: str):
+@token_required
+def activate_alarm_manual(current_user: str, window_id: str):
     window = get_window_or_404(window_id)
     if isinstance(window, tuple):
         return window
     
     window.activate_alarm("Manual activation via API")
-    log_action(f"API: Manually activated alarm for {window_id}") # Log this action
+    log_action(f"API: User {current_user} manually activated alarm for {window_id}") # Log this action
     return jsonify({"status": "ok", "window_id": window_id, "alarm_active": window.alarm_active})
 
 @app.route("/deactivate_alarm/<window_id>", methods=["POST"])
-def deactivate_alarm_manual(window_id: str):
+@token_required
+def deactivate_alarm_manual(current_user: str, window_id: str):
     window = get_window_or_404(window_id)
     if isinstance(window, tuple):
         return window
     
     window.deactivate_alarm()
-    log_action(f"API: Manually deactivated alarm for {window_id}") # Log this action
+    log_action(f"API: User {current_user} manually deactivated alarm for {window_id}") # Log this action
     return jsonify({"status": "ok", "window_id": window_id, "alarm_active": window.alarm_active})
 
 # Serve static files for the React app

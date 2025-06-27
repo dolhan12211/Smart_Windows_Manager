@@ -983,3 +983,200 @@
 2025-06-25 20:25:11,188 - action_logger - INFO - API: Set manual control for window_001 to False
 2025-06-25 20:25:14,282 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
 2025-06-25 20:25:16,336 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:08:30,289 - action_logger - INFO - API: User admin logged in successfully.
+2025-06-27 19:08:30,289 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: API: User admin logged in successfully.
+2025-06-27 19:08:34,324 - action_logger - INFO - API: Login attempt failed - invalid credentials for username: admin
+2025-06-27 19:08:34,325 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: API: Login attempt failed - invalid credentials for username: admin
+2025-06-27 19:12:48,898 - action_logger - INFO - API: User admin logged in successfully.
+2025-06-27 19:12:48,899 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: API: User admin logged in successfully.
+2025-06-27 19:14:07,914 - action_logger - INFO - Window window_002: Window state changed to CLOSED.
+2025-06-27 19:14:07,914 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Window state changed to CLOSED.
+2025-06-27 19:14:07,915 - action_logger - INFO - Window window_002: ALARM ACTIVATED! Reason: High temperature (30.02°C)
+2025-06-27 19:14:07,915 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: ALARM ACTIVATED! Reason: High temperature (30.02°C)
+2025-06-27 19:14:07,915 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:14:07,916 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:14:13,920 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.26%)
+2025-06-27 19:14:13,921 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (70.26%)
+2025-06-27 19:14:15,922 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.43%)
+2025-06-27 19:14:15,923 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (70.43%)
+2025-06-27 19:14:17,925 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:14:17,925 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:14:17,925 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.58%)
+2025-06-27 19:14:17,926 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (70.58%)
+2025-06-27 19:14:19,927 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.7%)
+2025-06-27 19:14:19,928 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (70.7%)
+2025-06-27 19:14:20,351 - action_logger - INFO - Window window_003: Manual control changed from False to True
+2025-06-27 19:14:20,351 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_003: Manual control changed from False to True
+2025-06-27 19:14:20,351 - action_logger - INFO - API: User admin set manual control for window_003 to True
+2025-06-27 19:14:20,352 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: API: User admin set manual control for window_003 to True
+2025-06-27 19:14:21,813 - action_logger - INFO - Window window_002: Manual control changed from False to True
+2025-06-27 19:14:21,814 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Manual control changed from False to True
+2025-06-27 19:14:21,814 - action_logger - INFO - API: User admin set manual control for window_002 to True
+2025-06-27 19:14:21,814 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: API: User admin set manual control for window_002 to True
+2025-06-27 19:14:23,768 - action_logger - INFO - Window window_003: Window state changed to CLOSED.
+2025-06-27 19:14:23,768 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_003: Window state changed to CLOSED.
+2025-06-27 19:14:23,769 - action_logger - INFO - API: User admin manually closed window window_003
+2025-06-27 19:14:23,769 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: API: User admin manually closed window window_003
+2025-06-27 19:14:25,524 - action_logger - INFO - Window window_002: Window state changed to OPEN.
+2025-06-27 19:14:25,524 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Window state changed to OPEN.
+2025-06-27 19:14:25,524 - action_logger - INFO - API: User admin manually opened window window_002
+2025-06-27 19:14:25,524 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: API: User admin manually opened window window_002
+2025-06-27 19:14:27,474 - action_logger - INFO - Window window_002: ALARM DEACTIVATED.
+2025-06-27 19:14:27,475 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: ALARM DEACTIVATED.
+2025-06-27 19:14:27,475 - action_logger - INFO - API: User admin manually deactivated alarm for window_002
+2025-06-27 19:14:27,475 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: API: User admin manually deactivated alarm for window_002
+2025-06-27 19:14:33,855 - action_logger - INFO - API: User admin logged in successfully.
+2025-06-27 19:14:33,856 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: API: User admin logged in successfully.
+2025-06-27 19:14:49,836 - action_logger - INFO - Window window_002: Window state changed to CLOSED.
+2025-06-27 19:14:49,836 - action_logger - INFO - Window window_002: ALARM ACTIVATED! Reason: High temperature (30.26°C)
+2025-06-27 19:14:49,836 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:14:51,837 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:14:53,838 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:14:55,840 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:14:57,842 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:14:59,844 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:01,846 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:03,848 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:05,850 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:05,850 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.01%)
+2025-06-27 19:15:07,851 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:07,851 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.2%)
+2025-06-27 19:15:09,852 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:09,852 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.48%)
+2025-06-27 19:15:11,854 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.71%)
+2025-06-27 19:15:13,855 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:13,855 - action_logger - INFO - Window window_002: Closing window due to high humidity (70.92%)
+2025-06-27 19:15:15,857 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:15,857 - action_logger - INFO - Window window_002: Closing window due to high humidity (71.09%)
+2025-06-27 19:15:17,858 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:17,858 - action_logger - INFO - Window window_002: Closing window due to high humidity (71.24%)
+2025-06-27 19:15:19,860 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:19,860 - action_logger - INFO - Window window_002: Closing window due to high humidity (71.45%)
+2025-06-27 19:15:21,861 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:21,861 - action_logger - INFO - Window window_002: Closing window due to high humidity (71.67%)
+2025-06-27 19:15:23,862 - action_logger - INFO - Window window_002: Closing window due to high humidity (71.82%)
+2025-06-27 19:15:25,864 - action_logger - INFO - Window window_002: Closing window due to high humidity (72.1%)
+2025-06-27 19:15:27,865 - action_logger - INFO - Window window_002: Closing window due to high humidity (72.29%)
+2025-06-27 19:15:29,866 - action_logger - INFO - Window window_002: Closing window due to high humidity (72.48%)
+2025-06-27 19:15:31,868 - action_logger - INFO - Window window_002: Closing window due to high humidity (72.77%)
+2025-06-27 19:15:33,869 - action_logger - INFO - Window window_002: Closing window due to high humidity (72.91%)
+2025-06-27 19:15:35,871 - action_logger - INFO - Window window_002: Closing window due to high humidity (73.14%)
+2025-06-27 19:15:37,872 - action_logger - INFO - Window window_002: Closing window due to high humidity (73.33%)
+2025-06-27 19:15:39,874 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:39,874 - action_logger - INFO - Window window_002: Closing window due to high humidity (73.47%)
+2025-06-27 19:15:41,875 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:41,875 - action_logger - INFO - Window window_002: Closing window due to high humidity (73.6%)
+2025-06-27 19:15:43,877 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:43,877 - action_logger - INFO - Window window_002: Closing window due to high humidity (73.82%)
+2025-06-27 19:15:45,879 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:45,879 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.05%)
+2025-06-27 19:15:46,804 - action_logger - INFO - Window window_002: Manual control changed from True to False
+2025-06-27 19:15:46,804 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Manual control changed from True to False
+2025-06-27 19:15:46,804 - action_logger - INFO - API: User admin set manual control for window_002 to False
+2025-06-27 19:15:46,805 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: API: User admin set manual control for window_002 to False
+2025-06-27 19:15:46,988 - action_logger - INFO - Window window_002: Window state changed to CLOSED.
+2025-06-27 19:15:46,989 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Window state changed to CLOSED.
+2025-06-27 19:15:46,989 - action_logger - INFO - Window window_002: ALARM ACTIVATED! Reason: High temperature (35.0°C)
+2025-06-27 19:15:46,989 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: ALARM ACTIVATED! Reason: High temperature (35.0°C)
+2025-06-27 19:15:46,990 - action_logger - INFO - Window window_002: Closing window due to high humidity (73.92%)
+2025-06-27 19:15:46,990 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (73.92%)
+2025-06-27 19:15:47,297 - action_logger - INFO - Window window_003: Manual control changed from True to False
+2025-06-27 19:15:47,298 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_003: Manual control changed from True to False
+2025-06-27 19:15:47,298 - action_logger - INFO - API: User admin set manual control for window_003 to False
+2025-06-27 19:15:47,298 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: API: User admin set manual control for window_003 to False
+2025-06-27 19:15:47,880 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:47,880 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.19%)
+2025-06-27 19:15:48,991 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.16%)
+2025-06-27 19:15:48,991 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (74.16%)
+2025-06-27 19:15:49,882 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:49,882 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.26%)
+2025-06-27 19:15:50,993 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.27%)
+2025-06-27 19:15:50,993 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (74.27%)
+2025-06-27 19:15:51,884 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:51,884 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.44%)
+2025-06-27 19:15:52,995 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:52,996 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:52,996 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.49%)
+2025-06-27 19:15:52,996 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (74.49%)
+2025-06-27 19:15:53,886 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:53,886 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.68%)
+2025-06-27 19:15:54,998 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:54,998 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:54,998 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.72%)
+2025-06-27 19:15:54,999 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (74.72%)
+2025-06-27 19:15:55,887 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:55,887 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.81%)
+2025-06-27 19:15:57,001 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.98%)
+2025-06-27 19:15:57,001 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (74.98%)
+2025-06-27 19:15:57,889 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:57,889 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.88%)
+2025-06-27 19:15:59,003 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.2%)
+2025-06-27 19:15:59,004 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (75.2%)
+2025-06-27 19:15:59,891 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:15:59,891 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.9%)
+2025-06-27 19:16:01,006 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.23%)
+2025-06-27 19:16:01,006 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (75.23%)
+2025-06-27 19:16:01,892 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:01,892 - action_logger - INFO - Window window_002: Closing window due to high humidity (74.89%)
+2025-06-27 19:16:03,008 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.29%)
+2025-06-27 19:16:03,008 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (75.29%)
+2025-06-27 19:16:03,894 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:03,894 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.03%)
+2025-06-27 19:16:05,010 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:05,010 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:05,011 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.39%)
+2025-06-27 19:16:05,011 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (75.39%)
+2025-06-27 19:16:05,895 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:05,895 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.14%)
+2025-06-27 19:16:07,012 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:07,012 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:07,012 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.41%)
+2025-06-27 19:16:07,013 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (75.41%)
+2025-06-27 19:16:07,897 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:07,897 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.15%)
+2025-06-27 19:16:09,015 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.47%)
+2025-06-27 19:16:09,015 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (75.47%)
+2025-06-27 19:16:09,899 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:09,899 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.14%)
+2025-06-27 19:16:11,017 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.53%)
+2025-06-27 19:16:11,017 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (75.53%)
+2025-06-27 19:16:11,900 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:11,900 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.14%)
+2025-06-27 19:16:13,020 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:13,020 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:13,021 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.56%)
+2025-06-27 19:16:13,021 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (75.56%)
+2025-06-27 19:16:13,902 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.18%)
+2025-06-27 19:16:15,022 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:15,023 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:15,023 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.6%)
+2025-06-27 19:16:15,024 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (75.6%)
+2025-06-27 19:16:15,903 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.17%)
+2025-06-27 19:16:17,025 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:17,026 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:17,026 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.68%)
+2025-06-27 19:16:17,026 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (75.68%)
+2025-06-27 19:16:17,905 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.2%)
+2025-06-27 19:16:19,028 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:19,028 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:19,028 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.73%)
+2025-06-27 19:16:19,029 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (75.73%)
+2025-06-27 19:16:19,907 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.2%)
+2025-06-27 19:16:21,030 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:21,031 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:21,031 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.72%)
+2025-06-27 19:16:21,031 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (75.72%)
+2025-06-27 19:16:21,908 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.22%)
+2025-06-27 19:16:23,034 - action_logger - INFO - Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:23,035 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Motion detected while alarm is ACTIVE!
+2025-06-27 19:16:23,035 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.75%)
+2025-06-27 19:16:23,036 - action_logger - ERROR - Failed to upload log to Azure Blob Storage: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4 - Message: Window window_002: Closing window due to high humidity (75.75%)
+2025-06-27 19:16:23,910 - action_logger - INFO - Window window_002: Closing window due to high humidity (75.28%)
+2025-06-27 19:18:17,088 - action_logger - INFO - API: User admin logged in successfully.
+2025-06-27 19:18:29,954 - action_logger - INFO - API: User admin logged in successfully.
+2025-06-27 19:18:31,815 - action_logger - INFO - Window window_003: Manual control changed from False to True
+2025-06-27 19:18:31,815 - action_logger - INFO - API: User admin set manual control for window_003 to True
+2025-06-27 19:18:32,807 - action_logger - INFO - Window window_002: Manual control changed from False to True
+2025-06-27 19:18:32,808 - action_logger - INFO - API: User admin set manual control for window_002 to True
+2025-06-27 19:18:33,227 - action_logger - INFO - Window window_001: Manual control changed from False to True
+2025-06-27 19:18:33,227 - action_logger - INFO - API: User admin set manual control for window_001 to True
