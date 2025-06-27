@@ -1,19 +1,54 @@
-Projekt „Smart Windows Manager” (Zarządca Inteligentnych Okien) to innowacyjne rozwiązanie skoncentrowane na automatyzacji i optymalizacji zarządzania oknami w inteligentnych domach. System ten umożliwia nie tylko zdalne sterowanie oknami, ale także ich ściemnianie i aktywację blokady antywłamaniowej, co zwiększa bezpieczeństwo oraz komfort życia mieszkańców. Przy wykorzystaniu zaawansowanych technologii i danych z czujników, system automatycznie dopasowuje ustawienia okien, aby zapewnić optymalne warunki świetlne i bezpieczeństwo.
+Projekt „Smart Windows Manager" (Zarządca Inteligentnych Okien) to system monitorowania i symulacji inteligentnych okien w czasie rzeczywistym, zbudowany w architekturze mikrousług z wykorzystaniem technologii React i Python/Flask.
 
 Główne założenia projektu:
 
-1. Automatyzacja i kontrola: System umożliwia pełną kontrolę nad funkcjonowaniem okien, w tym ich otwieranie, zamykanie, ściemnianie oraz aktywację blokady antywłamaniowej. Zapewnia to użytkownikom możliwość dostosowania warunków w domu do indywidualnych potrzeb w sposób inteligentny.
+1. **System Monitorowania w Czasie Rzeczywistym**: Aplikacja zapewnia dashboard webowy do monitorowania stanu 3 symulowanych okien, każde wyposażone w 4 typy czujników (temperatura, wilgotność, światło, ruch). Dane są aktualizowane co sekundę, zapewniając użytkownikowi aktualny obraz systemu.
 
-2. Wykorzystanie danych z czujników: Dzięki zastosowaniu czujników światła słonecznego oraz innych parametrów bezpieczeństwa, system może w czasie rzeczywistym analizować warunki zewnętrzne i wewnętrzne, aby odpowiednio regulować ustawienia okien.
+2. **Symulacja Realistyczna**: System wykorzystuje zaawansowane algorytmy symulacji z trendami i losowością, generując realistyczne dane czujników:
+   - Temperatura: 15-35°C z trendem i zmianami ±0.1°C
+   - Wilgotność: 30-90% z podobną logiką
+   - Światło: 0-100 lux z symulacją warunków dziennych
+   - Ruch: probabilistyczna detekcja z 5% szansą zmiany stanu
 
-3. Optymalizacja komfortu i bezpieczeństwa: Poprzez inteligentne zarządzanie ściemnianiem okien oraz blokadą antywłamaniową, system przyczynia się do zwiększenia komfortu oraz bezpieczeństwa mieszkańców.
+3. **Automatyzacja Inteligentna**: System implementuje logikę automatycznych akcji na podstawie progów czujników:
+   - Temperatura > 30°C → automatyczne zamknięcie okna + aktywacja alarmu
+   - Temperatura < 10°C → automatyczne otwarcie okna
+   - Wilgotność > 70% → automatyczne zamknięcie okna
+   - Detekcja ruchu przy aktywnym alarmie → logowanie ostrzeżenia
 
-4. Dostępność i elastyczność: Dzięki intuicyjnemu interfejsowi użytkownika oraz możliwości zdalnego sterowania za pomocą strony internetowej, system jest łatwo dostępny i elastyczny w obsłudze. Użytkownicy mogą łatwo dostosować ustawienia okien do własnych preferencji, nawet będąc poza domem.
+4. **Architektura Mikrousług**: Aplikacja składa się z dwóch głównych kontenerów Docker:
+   - **Frontend Container**: React 19.1.0 z Tailwind CSS, serwowany przez Nginx
+   - **Backend Container**: Python 3.9 z Flask, obsługujący REST API i symulację
 
-5. Łatwe w zarządzaniu: Projekt oferuje możliwość łatwego zarządzania funkcjami okien, umożliwiając użytkownikom tworzenie scenariuszy działania okien zgodnie z własnymi potrzebami.
+5. **Wielowątkowość i Wydajność**: Każde okno działa w osobnym wątku (threading.Thread), zapewniając niezależną symulację i wysoką wydajność systemu. SensorManager zapewnia thread-safe dostęp do danych.
 
-6. Dbanie o bezpieczeństwo: System zapewnia zwiększone bezpieczeństwo domu poprzez automatyczną aktywację blokad antywłamaniowych w odpowiedzi na zidentyfikowane zagrożenia.
+6. **Tryby Pracy**: 
+   - **Automatyczny**: System sam podejmuje decyzje na podstawie danych z czujników
+   - **Manualny**: Użytkownik może przejąć kontrolę i sterować oknami ręcznie
+   - **Alarm**: Możliwość aktywacji/deaktywacji systemu alarmowego dla każdego okna
 
-Projekt „Smart Windows Manager” reprezentuje przyszłość zarządzania oknami w inteligentnych domach, łącząc w sobie zaawansowane technologie z funkcjonalnościami zapewniającymi większy komfort i bezpieczeństwo mieszkańców. Poprzez inteligentne wykorzystanie danych z czujników i automatyzację, system oferuje wyjątkowe rozwiązania dostosowane do potrzeb nowoczesnego mieszkania.
+7. **Logowanie i Monitoring**: Zaawansowany system logowania z podwójnym zapisem:
+   - **Lokalne logi**: Pliki tekstowe z rotacją (5MB, 5 plików backup)
+   - **Azure Blob Storage**: Zdalne przechowywanie logów w chmurze z fallback
 
-Kalkulator kosztów: https://azure.com/e/70aef95066034159bc9bdf22f5a6e67b
+8. **Deployment w Chmurze**: Aplikacja jest wdrożona na Azure Virtual Machine (IP: 4.233.221.95) z wykorzystaniem Docker Compose, zapewniając skalowalność i niezawodność.
+
+9. **REST API**: Kompletne API REST z endpointami:
+   - GET /get_data - pobieranie danych ze wszystkich okien
+   - POST /set_manual_control/{window_id} - przełączanie trybu manualnego
+   - POST /open_window/{window_id} - otwieranie okna
+   - POST /close_window/{window_id} - zamykanie okna
+   - POST /activate_alarm/{window_id} - aktywacja alarmu
+   - POST /deactivate_alarm/{window_id} - deaktywacja alarmu
+
+10. **Bezpieczeństwo i CORS**: Skonfigurowane zabezpieczenia CORS dla środowisk deweloperskich i produkcyjnych, obsługa błędów i retry logic dla połączeń z Azure.
+
+Projekt reprezentuje nowoczesne podejście do IoT i smart home, demonstrując integrację technologii frontendowych, backendowych, konteneryzacji i usług chmurowych w jednym spójnym systemie monitorowania.
+
+**Środowiska:**
+- **Produkcja**: http://4.233.221.95 (Azure VM + Docker)
+- **Development**: http://localhost:3000 (React Dev Server)
+
+**Kalkulator kosztów Azure**: https://azure.com/e/70aef95066034159bc9bdf22f5a6e67b
+
+**Technologie**: React 19.1.0, Python 3.9, Flask, Docker, Azure Blob Storage, Tailwind CSS, Threading, REST API

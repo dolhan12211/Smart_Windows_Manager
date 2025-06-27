@@ -5,13 +5,24 @@ LAYOUT_WITH_LEGEND()
 
 title System Context for Smart Windows Manager
 
-Person(user, "Mieszkaniec", "Użytkownik systemu, np. mieszkaniec domu. Konfiguruje system i korzysta z jego funkcji.")
-System(smart_windows_system, "Smart Windows Manager", "Automatyzuje i optymalizuje zarządzanie oknami, ściemnianiem oraz blokadami antywłamaniowymi.")
+Person(user, "Mieszkaniec", "Użytkownik systemu monitorującego inteligentne okna. Korzysta z dashboardu do monitorowania stanu okien i czujników.")
+System(smart_windows_system, "Smart Windows Manager", "System monitorowania i symulacji inteligentnych okien z czujnikami temperatury, wilgotności, światła i ruchu. Zapewnia dashboard w czasie rzeczywistym.")
 
-System_Ext(physical_windows, "System Okienny", "Fizyczne okna z mechanizmami otwierania/zamykania, ściemniania i blokadami antywłamaniowymi.")
-System_Ext(sensor_system, "System Czujników", "Dostarcza dane oświetleniowe (czujniki światła) i bezpieczeństwa (np. czujniki ruchu, otwarcia).")
+System_Ext(azure_storage, "Azure Blob Storage", "Przechowuje logi akcji systemu w chmurze Azure.")
+System_Ext(docker_host, "Docker Host / Azure VM", "Środowisko uruchomieniowe dla kontenerów aplikacji (IP: 4.233.221.95).")
 
-Rel_D(user, smart_windows_system, "Zarządza oknami, konfiguruje preferencje, tworzy scenariusze, aktywuje/deaktywuje funkcje")
-Rel_D(smart_windows_system, physical_windows, "Steruje (otwiera, zamyka, ściemnia, blokuje/odblokowuje)")
-Rel_U(smart_windows_system, sensor_system, "Odczytuje dane (poziom światła, stan bezpieczeństwa)")
+Rel_D(user, smart_windows_system, "Monitoruje okna, steruje trybem manualnym, aktywuje/deaktywuje alarmy", "HTTPS/HTTP")
+Rel_D(smart_windows_system, azure_storage, "Zapisuje logi akcji i zdarzeń", "Azure Storage API")
+Rel_U(docker_host, smart_windows_system, "Hostuje kontenery aplikacji", "Docker")
+
+note right of smart_windows_system
+  System symuluje 3 okna z czujnikami:
+  - Temperatura (15-35°C)
+  - Wilgotność (30-90%)
+  - Światło (0-100 lux)
+  - Ruch (true/false)
+  
+  Automatyczne akcje na podstawie progów
+end note
+
 @enduml

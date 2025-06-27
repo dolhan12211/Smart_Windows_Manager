@@ -5,22 +5,46 @@ LAYOUT_WITH_LEGEND()
 
 title Container Diagram for Smart Windows Manager
 
-Person(user, "Mieszkaniec", "Użytkownik systemu.")
+Person(user, "Mieszkaniec", "Użytkownik systemu monitorującego.")
 
-System_Ext(physical_windows, "System Okienny", "Fizyczne okna z mechanizmami.")
-System_Ext(sensor_system, "System Czujników", "Dostarcza dane oświetleniowe i bezpieczeństwa.")
+System_Ext(azure_storage, "Azure Blob Storage", "Przechowuje logi akcji systemu.")
+System_Ext(docker_host, "Docker Host", "Azure VM (4.233.221.95) z Docker Compose.")
 
 System_Boundary(c1, "Smart Windows Manager") {
-    Container(web_app, "Aplikacja Webowa", "Technologia: React, JavaScript, HTML, CSS", "Udostępnia interfejs użytkownika do zdalnego sterowania, konfiguracji preferencji.")
-    Container(api_service, "Serwis API / System Główny", "Technologia: Python", "Obsługuje logikę biznesową: automatyzację, przetwarzanie danych z czujników, zarządzanie scenariuszami, reczną aktywację blokad, komunikację z oknami.")
-    ContainerDb(database, "Baza Danych", "Azure Blob Storage", "Przechowuje ustawienia użytkownika, zdefiniowane scenariusze, historię zdarzeń .")
+    Container(frontend, "Frontend Container", "React 19.1.0 + Nginx", "Dashboard w czasie rzeczywistym do monitorowania okien i czujników. Port 80 (prod) / 3000 (dev).")
+    Container(backend, "Backend Container", "Python 3.9 + Flask", "API REST do zarządzania danymi z czujników, symulacji okien i logowania akcji. Port 8000.")
+    ContainerDb(local_logs, "Lokalne Logi", "Pliki tekstowe", "Lokalne przechowywanie logów z rotacją (5MB, 5 plików backup).")
 }
 
-Rel_D(user, web_app, "Używa (przegląda, konfiguruje, steruje)", "HTTPS")
-Rel_D(web_app, api_service, "Wysyła żądania użytkownika i odbiera dane do wyświetlenia", "API (HTTPS/REST)")
+Rel_D(user, frontend, "Korzysta z dashboardu", "HTTPS/HTTP")
+Rel_D(frontend, backend, "Pobiera dane co 1s", "HTTP REST API (JSON)")
 
-Rel_D(api_service, database, "Odczytuje i zapisuje dane", "np. JDBC, ODBC, API")
-Rel_D(api_service, physical_windows, "Wysyła polecenia sterujące", "np. Zigbee, Z-Wave, Wi-Fi API, MQTT")
-Rel_D(api_service, sensor_system, "Odczytuje dane telemetryczne", "np. MQTT, HTTP, dedykowany protokół")
+Rel_D(backend, local_logs, "Zapisuje logi lokalnie", "File I/O")
+Rel_D(backend, azure_storage, "Synchronizuje logi", "Azure Storage API")
+
+Rel_U(docker_host, frontend, "Hostuje kontener", "Docker")
+Rel_U(docker_host, backend, "Hostuje kontener", "Docker")
+
+note right of backend
+  Symuluje 3 okna (window_001-003)
+  Każde okno w osobnym wątku
+  4 czujniki na okno:
+  - TemperatureSensor
+  - HumiditySensor  
+  - LightSensor
+  - MotionSensor
+  
+  Aktualizacja co 0.5s
+  Automatyczne progi i akcje
+end note
+
+note right of frontend
+  React Dashboard:
+  - Real-time monitoring
+  - Odświeżanie co 1s
+  - Sterowanie trybem manualnym
+  - Kontrola alarmów
+  - Tailwind CSS styling
+end note
 
 @enduml
