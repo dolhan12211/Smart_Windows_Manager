@@ -73,12 +73,10 @@ def log_action(message: str):
     # Log to Azure Blob Storage if connected
     if blob_service_client:
         try:
-            # The error "Invalid base64-encoded string" suggests append_block might be misinterpreting the data.
-            # Let's ensure we're sending plain bytes and not something that could be mistaken for base64.
-            # The previous error message "number of data characters (9) cannot be 1 more than a multiple of 4"
-            # is very specific to base64 padding.
-            # We will send the raw bytes of the formatted log line.
-            blob_client.append_block(formatted_log_line.encode('utf-8'))
+            encoded_message = formatted_log_line.encode('utf-8')
+            print(f"Attempting to append {len(encoded_message)} bytes to Azure Blob Storage.") # Diagnostic print
+            blob_client.append_block(encoded_message)
+            print(f"Successfully appended {len(encoded_message)} bytes to Azure Blob Storage.") # Diagnostic print
         except Exception as e:
             print(f"Failed to upload log to Azure Blob Storage: {e}")
             # Fallback to local logging if Azure upload fails
