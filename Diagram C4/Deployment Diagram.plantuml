@@ -1,0 +1,76 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Deployment.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Deployment Diagram for Smart Windows Manager
+
+Deployment_Node(azure_cloud, "Microsoft Azure Cloud", "Chmura Azure") {
+    Deployment_Node(azure_vm, "Azure Virtual Machine", "Standard B2s (2 vCPU, 4GB RAM)") {
+        Deployment_Node(docker_engine, "Docker Engine", "Docker 20.10+") {
+            Deployment_Node(docker_compose, "Docker Compose", "Orkiestracja kontenerów") {
+                Container(backend_container, "Backend Container", "Python 3.9 + Flask", "Port 8000:8000\nAPI REST + Symulacja")
+                Container(frontend_container, "Frontend Container", "React + Nginx", "Port 80:80\nDashboard UI")
+            }
+        }
+        
+        Deployment_Node(vm_storage, "VM Local Storage", "Dysk lokalny") {
+            ContainerDb(log_files, "Log Files", "action_log.txt", "Rotacja 5MB x 5 plików")
+        }
+    }
+    
+    Deployment_Node(azure_storage_account, "Azure Storage Account", "Konto magazynu") {
+        ContainerDb(blob_storage, "Blob Container", "action-logs", "Append Blob dla logów")
+    }
+}
+
+Deployment_Node(user_device, "Urządzenie Użytkownika", "Laptop/Desktop/Mobile") {
+    Container(web_browser, "Przeglądarka", "Chrome/Firefox/Safari", "Interfejs użytkownika")
+}
+
+Deployment_Node(development_env, "Środowisko Deweloperskie", "Localhost") {
+    Container(dev_backend, "Dev Backend", "Python Flask", "Port 8000")
+    Container(dev_frontend, "Dev Frontend", "React Dev Server", "Port 3000")
+}
+
+' Relacje produkcyjne
+Rel(web_browser, frontend_container, "HTTPS/HTTP", "4.233.221.95:80")
+Rel(frontend_container, backend_container, "HTTP REST API", "localhost:8000")
+Rel(backend_container, log_files, "File I/O", "Lokalne logowanie")
+Rel(backend_container, blob_storage, "Azure Storage API", "Zdalne logowanie")
+
+' Relacje deweloperskie
+Rel(web_browser, dev_frontend, "HTTP", "localhost:3000")
+Rel(dev_frontend, dev_backend, "HTTP REST API", "localhost:8000")
+
+note right of azure_vm
+  **Konfiguracja VM:**
+  - OS: Ubuntu 20.04 LTS
+  - IP: 4.233.221.95
+  - Porty: 80, 8000
+  - Docker Compose orchestration
+  
+  **Network Security:**
+  - CORS: localhost:3000, 4.233.221.95:3000
+  - Firewall: HTTP/HTTPS only
+end note
+
+note right of docker_compose
+  **docker-compose.yml:**
+  - backend: build from Dockerfile
+  - frontend: build from Dockerfile  
+  - volumes: logs mapping
+  - networks: internal communication
+  - environment: Azure connection string
+end note
+
+note right of blob_storage
+  **Azure Blob Storage:**
+  - Container: action-logs
+  - Type: Append Blob
+  - Retention: długoterminowe
+  - Backup: automatyczny
+  - Access: Storage Account Key
+end note
+
+@enduml
