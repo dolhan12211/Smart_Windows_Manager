@@ -17,30 +17,44 @@ BLOB_NAME = "smart-windows-manager-actions.log" # Single blob for all logs
 
 # Initialize Azure Blob Service Client
 blob_service_client = None
+blob_client = None # Initialize blob_client here as well
+
+print(f"DEBUG: CONNECTION_STRING loaded: {'<present>' if CONNECTION_STRING else '<missing>'}")
+
 if CONNECTION_STRING:
     try:
         blob_service_client = BlobServiceClient.from_connection_string(CONNECTION_STRING)
+        print("DEBUG: BlobServiceClient initialized.")
         container_client = blob_service_client.get_container_client(CONTAINER_NAME)
+        
         try:
             container_client.create_container()
-            print(f"Container '{CONTAINER_NAME}' created.")
+            print(f"DEBUG: Container '{CONTAINER_NAME}' created.")
         except Exception as e:
             if "ContainerAlreadyExists" not in str(e):
-                print(f"Container '{CONTAINER_NAME}' already exists or other error: {e}")
+                print(f"DEBUG: Container '{CONTAINER_NAME}' already exists or other error: {e}")
+            else:
+                print(f"DEBUG: Container '{CONTAINER_NAME}' already exists.")
         
         # Get the append blob client
         blob_client = container_client.get_blob_client(BLOB_NAME)
+        print(f"DEBUG: BlobClient for '{BLOB_NAME}' obtained.")
         try:
             # Create the append blob if it doesn't exist
             blob_client.create_append_blob()
-            print(f"Append blob '{BLOB_NAME}' created.")
+            print(f"DEBUG: Append blob '{BLOB_NAME}' created.")
         except Exception as e:
             if "BlobAlreadyExists" not in str(e):
-                print(f"Append blob '{BLOB_NAME}' already exists or other error: {e}")
+                print(f"DEBUG: Append blob '{BLOB_NAME}' already exists or other error: {e}")
+            else:
+                print(f"DEBUG: Append blob '{BLOB_NAME}' already exists.")
 
     except Exception as e:
-        print(f"Could not connect to Azure Blob Storage: {e}")
+        print(f"ERROR: Could not connect to Azure Blob Storage: {e}")
         blob_service_client = None # Ensure it's None if connection fails
+        blob_client = None # Ensure it's None if connection fails
+else:
+    print("DEBUG: AZURE_STORAGE_CONNECTION_STRING is missing. Azure Blob Storage logging will be skipped.")
 
 # Create a custom logger
 action_logger = logging.getLogger('action_logger')
@@ -71,13 +85,14 @@ def log_action(message: str):
     action_logger.info(message)
 
     # Log to Azure Blob Storage if connected
-    if blob_service_client:
+    # Log to Azure Blob Storage if connected and blob_client is initialized
+    if blob_client: # Check blob_client directly
         try:
             encoded_message = formatted_log_line.encode('utf-8')
-            print(f"Attempting to append {len(encoded_message)} bytes to Azure Blob Storage.") # Diagnostic print
+            # print(f"Attempting to append {len(encoded_message)} bytes to Azure Blob Storage.") # Removed diagnostic print
             blob_client.append_block(encoded_message)
-            print(f"Successfully appended {len(encoded_message)} bytes to Azure Blob Storage.") # Diagnostic print
+            # print(f"Successfully appended {len(encoded_message)} bytes to Azure Blob Storage.") # Removed diagnostic print
         except Exception as e:
-            print(f"Failed to upload log to Azure Blob Storage: {e}")
+            print(f"ERROR: Failed to upload log to Azure Blob Storage: {e}")
             # Fallback to local logging if Azure upload fails
             action_logger.error(f"Failed to upload log to Azure Blob Storage: {e} - Message: {message}")
