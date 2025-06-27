@@ -10,7 +10,7 @@ function LoginPage({ onLogin }) {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:8000/login', {
+      const response = await fetch('http://4.233.221.95:8000/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
