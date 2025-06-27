@@ -10,7 +10,11 @@ System_Ext(azure_storage_ref, "Azure Blob Storage", "Przechowuje logi akcji")
 System_Ext(local_logs_ref, "Lokalne Logi", "Pliki tekstowe z rotacją")
 
 Container_Boundary(backend_c, "Backend Container (Python/Flask)") {
-    Component(api_app, "API Controller", "Flask App (api_app.py)", "Obsługuje endpointy REST API: /get_data, /set_manual_control, /open_window, /close_window, /activate_alarm, /deactivate_alarm. Konfiguruje CORS.")
+    Component(api_app, "API Controller", "Flask App (api_app.py)", "Obsługuje endpointy REST API: /get_data, /login, /register, /set_manual_control, /open_window, /close_window, /activate_alarm, /deactivate_alarm. Konfiguruje CORS. Chronione endpointy wymagają JWT token.")
+    
+    Component(auth_manager, "Auth Manager", "auth.py", "JWT token management, user authentication, role-based access control. Decorator @token_required dla chronionych endpointów. Token expires: 30min.")
+    
+    Component(user_store, "User Store", "auth.py (USERS dict)", "Przechowuje dane użytkowników z hash passwords. Hardcoded users: admin/adminpass, testuser/testpass. Role: admin/user.")
     
     Component(sensor_manager, "Sensor Manager", "sensor_manager.py", "Centralne zarządzanie danymi ze wszystkich okien. Przechowuje current_window_data w pamięci. Thread-safe dostęp do danych.")
     
@@ -25,9 +29,12 @@ Container_Boundary(backend_c, "Backend Container (Python/Flask)") {
     Component(storage, "Storage Manager", "storage.py", "Zarządzanie połączeniem z Azure Blob Storage. Obsługa błędów i retry logic.")
 
     ' Relacje wewnętrzne
+    Rel(api_app, auth_manager, "Waliduje tokeny", "@token_required decorator")
     Rel(api_app, sensor_manager, "Pobiera dane okien", "get_all_windows_data()")
     Rel(api_app, window_threads, "Steruje oknami", "set_manual_control(), open_window(), close_window()")
     Rel(api_app, action_logger, "Loguje akcje API", "log_action()")
+    
+    Rel(auth_manager, user_store, "Weryfikuje credentials", "authenticate_user(), check_password_hash()")
     
     Rel(data_generator, window_threads, "Zarządza wątkami", "start(), stop(), join()")
     Rel(window_threads, sensors, "Aktualizuje czujniki", "update_value()")
@@ -41,6 +48,19 @@ Container_Boundary(backend_c, "Backend Container (Python/Flask)") {
     Rel_D(action_logger, local_logs_ref, "Zapisuje lokalnie", "RotatingFileHandler")
     Rel_D(storage, azure_storage_ref, "Synchronizuje logi", "Azure Storage API")
 }
+
+note right of auth_manager
+  **JWT Authentication:**
+  - Secret Key: hardcoded (TODO: env var)
+  - Token expiry: 30 minutes
+  - Headers: Authorization Bearer / x-access-token
+  - Roles: admin (full access), user (limited)
+  
+  **Endpoints:**
+  - /login (public)
+  - /register (public)  
+  - All window control (protected)
+end note
 
 note right of window_threads
   Każdy wątek okna:

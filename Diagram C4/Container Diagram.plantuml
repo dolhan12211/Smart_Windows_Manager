@@ -11,13 +11,13 @@ System_Ext(azure_storage, "Azure Blob Storage", "Przechowuje logi akcji systemu.
 System_Ext(docker_host, "Docker Host", "Azure VM (4.233.221.95) z Docker Compose.")
 
 System_Boundary(c1, "Smart Windows Manager") {
-    Container(frontend, "Frontend Container", "React 19.1.0 + Nginx", "Dashboard w czasie rzeczywistym do monitorowania okien i czujników. Port 80 (prod) / 3000 (dev).")
-    Container(backend, "Backend Container", "Python 3.9 + Flask", "API REST do zarządzania danymi z czujników, symulacji okien i logowania akcji. Port 8000.")
+    Container(frontend, "Frontend Container", "React 19.1.0 + Nginx", "Dashboard w czasie rzeczywistym do monitorowania okien i czujników. JWT token management w localStorage. Port 80 (prod) / 3000 (dev).")
+    Container(backend, "Backend Container", "Python 3.9 + Flask", "API REST do zarządzania danymi z czujników, symulacji okien, uwierzytelniania i logowania akcji. JWT-based authentication. Port 8000.")
     ContainerDb(local_logs, "Lokalne Logi", "Pliki tekstowe", "Lokalne przechowywanie logów z rotacją (5MB, 5 plików backup).")
 }
 
-Rel_D(user, frontend, "Korzysta z dashboardu", "HTTPS/HTTP")
-Rel_D(frontend, backend, "Pobiera dane co 1s", "HTTP REST API (JSON)")
+Rel_D(user, frontend, "Loguje się i korzysta z dashboardu", "HTTPS/HTTP")
+Rel_D(frontend, backend, "Authenticated API calls", "HTTP REST API (JSON) + JWT Bearer tokens")
 
 Rel_D(backend, local_logs, "Zapisuje logi lokalnie", "File I/O")
 Rel_D(backend, azure_storage, "Synchronizuje logi", "Azure Storage API")
@@ -26,25 +26,38 @@ Rel_U(docker_host, frontend, "Hostuje kontener", "Docker")
 Rel_U(docker_host, backend, "Hostuje kontener", "Docker")
 
 note right of backend
-  Symuluje 3 okna (window_001-003)
-  Każde okno w osobnym wątku
-  4 czujniki na okno:
-  - TemperatureSensor
-  - HumiditySensor  
-  - LightSensor
-  - MotionSensor
+  **Symulacja:**
+  - 3 okna (window_001-003)
+  - Każde okno w osobnym wątku
+  - 4 czujniki na okno: Temperature, Humidity, Light, Motion
+  - Aktualizacja co 0.5s, automatyczne progi i akcje
   
-  Aktualizacja co 0.5s
-  Automatyczne progi i akcje
+  **Authentication:**
+  - JWT tokens (30min expiry)
+  - Role-based access: admin/user
+  - Protected endpoints: @token_required
+  - Hardcoded users: admin/testuser
+  
+  **Security:**
+  - CORS: localhost:3000, 4.233.221.95:3000
+  - Password hashing: Werkzeug
+  - Token validation: Authorization Bearer / x-access-token
 end note
 
 note right of frontend
-  React Dashboard:
-  - Real-time monitoring
-  - Odświeżanie co 1s
+  **React Dashboard:**
+  - Real-time monitoring (refresh co 1s)
+  - Login/Register forms
+  - JWT token storage (localStorage)
   - Sterowanie trybem manualnym
   - Kontrola alarmów
   - Tailwind CSS styling
+  
+  **Authentication Flow:**
+  - Login → JWT token → API calls
+  - Token refresh handling
+  - Logout → token cleanup
+  - Protected routes
 end note
 
 @enduml
